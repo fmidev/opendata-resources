@@ -32,7 +32,7 @@ result range set type  | gml:DataBlock
 Remarks:
 
 * There is an error in the `om:name` process parameter property: the value of xlink:href should be 'http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime' instead of 'http://xml.fmi.fi/inspire/process/hirlam' 
-* Sampled feature is presented as a feature collection of locations (cities in this case), and the corresponding the sampling feature as having a MultiPoint shape.
+* Sampled feature is presented as a feature collection of locations (cities in this case), and the corresponding the sampling feature as having a MultiPoint shape. One grid point is located at each of the points of this MultiPoint.
 * The time dimension axis is using numerical unix time (number of seconds after 1.1.1970 00:00) as coordinates.
 
 Other stored queries in FMI's WFS service with similar coverage-valued results:
