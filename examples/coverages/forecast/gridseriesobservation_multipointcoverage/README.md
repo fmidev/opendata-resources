@@ -37,8 +37,8 @@ Remarks:
 
 Other stored queries in FMI's WFS service with similar coverage-valued results:
 
-* fmi::forecast::hbm::point::multipointcoverage
-* fmi::forecast::hirlam::surface::obsstations::multipointcoverage
-* fmi::forecast::hirlam::surface::point::multipointcoverage
-* fmi::forecast::oaas::sealevel::point::multipointcoverage
-* fmi::forecast::wam::point::multipointcoverage
+* [fmi::forecast::hbm::point::multipointcoverage](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::hbm::point::multipointcoverage)
+* [fmi::forecast::hirlam::surface::obsstations::multipointcoverage](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::hirlam::surface::obsstations::multipointcoverage)
+* [fmi::forecast::hirlam::surface::point::multipointcoverage](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::hirlam::surface::point::multipointcoverage)
+* [fmi::forecast::oaas::sealevel::point::multipointcoverage](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::oaas::sealevel::point::multipointcoverage)
+* [fmi::forecast::wam::point::multipointcoverage](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::wam::point::multipointcoverage)
