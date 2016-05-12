@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection
+    timeStamp="2016-05-12T10:29:50Z"
+    numberMatched="3"
+    numberReturned="3"
+        xmlns:wfs="http://www.opengis.net/wfs/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:om="http://www.opengis.net/om/2.0"
+    xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/3.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:swe="http://www.opengis.net/swe/2.0"
+    xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+    xmlns:inspire="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+    xmlns:sam="http://www.opengis.net/sampling/2.0"
+    xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" 
+    xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0"
+    xsi:schemaLocation="
+    http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+    http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
+    http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
+    http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
+    http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
+    http://inspire.ec.europa.eu/schemas/omso/3.0 http://inspire.ec.europa.eu/schemas/omso/3.0/SpecialisedObservations.xsd
+    http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd
+    http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0 http://xml.fmi.fi/schema/om/atmosphericfeatures/1.0/atmosphericfeatures.xsd">
+
+    
+    <wfs:member>
+        <omso:GridSeriesObservation gml:id="WFS-HCT45jYAfqTRYpBIKFuvfQeMWrKJTowpYWbbpdOs2_llx4efR060aeWzDtdOuHLLz59eWV06z8tOSFmZt_Lbh6VlZ.WnEybGbrs2Sd3TLy7YdkhqbMvbLsrYdnXLSoEegUvRGIFLIRSBS8EKgUqA_oFM8oFLgOSBSoDegUzSgUyygUySgNTbl6Zd9DDyw7a0JHXbpyaenmtapl28MvLD068stakfLv4SMunPo6VxVsuzfj09PNDf0y7umnDsrOr6d2SrNp1nV9O7JWm06xwqHPL1yb4OTThxYemnHQ39Mu7ppw7KmXbwy8sPTryy1oRMvehv07ujU38tOfTuqaduW1B_ClVsFP8JocOW_J1x5eVcWjTy2Ydt_hh07svDTu6YWpw5b9WXH00791amXhzzunTRmybNzn038suTj1y8vN_TkrLCzbdLp1m38suPDz6OnWjTy2Ydrp1w5ZefPryyunWflpyA">
+
+                        <om:phenomenonTime>
+                <gml:TimePeriod gml:id="ph-time-1-0">
+                    <gml:beginPosition>2016-05-11T18:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2016-05-14T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="rs-time-1-0">
+                <gml:timePosition>2016-05-11T18:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:validTime>
+                <gml:TimePeriod gml:id="vt-time-1-0">
+                    <gml:beginPosition>2016-05-11T18:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2016-05-14T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:validTime>
+
+              <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam_painepinta"/>
+	                  <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time---1-0"> 
+			    <gml:timePosition>2016-05-11T18:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;language=eng&amp;units=grib"/>
+                        <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="s-1-0">
+                <sam:sampledFeature>
+                    <target:SurfaceWeatherTargetArea gml:id="sampledFeatureTarget-0-1"> 
+                        <target:geometry>
+                            <gml:Polygon gml:id="sampledFeatureTarget-polygon-0-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:coordinates>
+					    -180 25.6476611861807 -180 89.9999445853145 180 89.9999445853145 180 25.6476611861807 -180 25.6476611861807
+                                        </gml:coordinates>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>                
+                        </target:geometry>
+            		<target:observableProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;language=eng&amp;units=grib"/>
+                    </target:SurfaceWeatherTargetArea>
+                </sam:sampledFeature>
+                <sams:shape>
+                    <gml:Polygon gml:id="samplingFeatureTarget-polygon-0-1">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:coordinates>
+					-180 25.6476611861807 -180 89.9999445853145 180 89.9999445853145 180 25.6476611861807 -180 25.6476611861807
+	  	                </gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>                    
+                </sams:shape>            
+            </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>           
+
+	                <om:result>        
+                <gmlcov:RectifiedGridCoverage gml:id="rgd-0-1">
+                    <gml:domainSet>
+                        <gml:RectifiedGrid gml:id="rg-0-1" dimension="2">
+                            <gml:limits>
+                                <gml:GridEnvelope>                                                                           
+                                    <gml:low>0 0</gml:low>
+                                    <gml:high>1030 816</gml:high>
+                                </gml:GridEnvelope>
+                            </gml:limits>
+                            <gml:axisLabels>Lat Long</gml:axisLabels>
+                            <gml:origin>
+                                <gml:Point gml:id="origin-point-0-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                    <gml:pos>-180 89.9999445853145</gml:pos>
+                                </gml:Point>
+                            </gml:origin>
+                            <gml:offsetVector>7.55417484947468 0</gml:offsetVector>
+                            <gml:offsetVector>0 7.55224956060577</gml:offsetVector>                            
+                        </gml:RectifiedGrid>
+                    </gml:domainSet>
+                    <gml:rangeSet>           
+                        <gml:File>
+                            <gml:rangeParameters/>
+                            <gml:fileReference>http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/download?producer=hirlam_painepinta&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;bbox=-180,25.6476611861807,180,89.9999445853145&amp;origintime=2016-05-11T18:00:00Z&amp;starttime=2016-05-11T18:00:00Z&amp;endtime=2016-05-14T00:00:00Z&amp;format=grib2&amp;projection=epsg:4326&amp;levels=1000,925,850,700,500,400,300,250,200,100,50</gml:fileReference>     
+                            <gml:fileStructure codeSpace="http://www.ecmwf.int/publications/manuals/d/gribapi/param/"></gml:fileStructure>              
+                            <gml:mimeType>application/octet-stream</gml:mimeType>
+                        </gml:File>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord><swe:field name="Humidity" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity&amp;language=eng&amp;units=grib"/><swe:field name="Temperature" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Temperature&amp;language=eng&amp;units=grib"/><swe:field name="GeopHeight" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=GeopHeight&amp;language=eng&amp;units=grib"/><swe:field name="VelocityPotential" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=VelocityPotential&amp;language=eng&amp;units=grib"/><swe:field name="WindUMS" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=WindUMS&amp;language=eng&amp;units=grib"/><swe:field name="WindVMS" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=WindVMS&amp;language=eng&amp;units=grib"/><swe:field name="PseudoAdiabaticPotentialTemperature" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=PseudoAdiabaticPotentialTemperature&amp;language=eng&amp;units=grib"/><swe:field name="DewPoint" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=DewPoint&amp;language=eng&amp;units=grib"/></swe:DataRecord>
+                    </gmlcov:rangeType>              
+                </gmlcov:RectifiedGridCoverage>
+            </om:result>
+
+        </omso:GridSeriesObservation>
+    </wfs:member>
+    
+    <wfs:member>
+        <omso:GridSeriesObservation gml:id="WFS-OhlGNbdlQBLPB88mcDcU_7mJFEKJTowpYWbbpdOs2_llx4efR060aeWzDtdOuHLLz59eWV06z8tOSFmZt_Lbh6VlZ.WnEybGbrs2Sd3TLy7YdkhqbMvbLsrYdnXLSoEegUvRGIFLIRSBS8EKgUqA_oFM8oFLgOSBSoDegUzSgUyygUySgNTbl6Zd9DDyw7a0JHXbpyaenmtapl28MvLD068stakfLv4SMunPo6VxVsuzfj09PNDf0y7umnDsrOr6d2SrNp1nV9O7JWm06xwqHPL1yb4OTThxYemnHQ39Mu7ppw7KmXbwy8sPTryy1oRMvehv07ujU38tOfTuqaduW1B_ClWDQ4ct.Trjy8q4tGnlsw7b_DDp3ZeGnd0wtThy36suPpp37q1MvDnndOmjNk2bnPpv5ZcnHrl5eb.nJWWFm26XTrNv5ZceHn0dOtGnlsw7XTrhyy8.fXlldOs_LTkA">
+
+                        <om:phenomenonTime>
+                <gml:TimePeriod gml:id="ph-time-1-1">
+                    <gml:beginPosition>2016-05-12T00:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2016-05-14T06:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="rs-time-1-1">
+                <gml:timePosition>2016-05-12T00:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:validTime>
+                <gml:TimePeriod gml:id="vt-time-1-1">
+                    <gml:beginPosition>2016-05-12T00:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2016-05-14T06:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:validTime>
+
+              <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam_painepinta"/>
+	                  <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time---1-1"> 
+			    <gml:timePosition>2016-05-12T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;language=eng&amp;units=grib"/>
+                        <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="s-1-1">
+                <sam:sampledFeature>
+                    <target:SurfaceWeatherTargetArea gml:id="sampledFeatureTarget-1-1"> 
+                        <target:geometry>
+                            <gml:Polygon gml:id="sampledFeatureTarget-polygon-1-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:coordinates>
+					    -180 25.6476611861807 -180 89.9999445853145 180 89.9999445853145 180 25.6476611861807 -180 25.6476611861807
+                                        </gml:coordinates>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>                
+                        </target:geometry>
+            		<target:observableProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;language=eng&amp;units=grib"/>
+                    </target:SurfaceWeatherTargetArea>
+                </sam:sampledFeature>
+                <sams:shape>
+                    <gml:Polygon gml:id="samplingFeatureTarget-polygon-1-1">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:coordinates>
+					-180 25.6476611861807 -180 89.9999445853145 180 89.9999445853145 180 25.6476611861807 -180 25.6476611861807
+	  	                </gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>                    
+                </sams:shape>            
+            </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>           
+
+	                <om:result>        
+                <gmlcov:RectifiedGridCoverage gml:id="rgd-1-1">
+                    <gml:domainSet>
+                        <gml:RectifiedGrid gml:id="rg-1-1" dimension="2">
+                            <gml:limits>
+                                <gml:GridEnvelope>                                                                           
+                                    <gml:low>0 0</gml:low>
+                                    <gml:high>1030 816</gml:high>
+                                </gml:GridEnvelope>
+                            </gml:limits>
+                            <gml:axisLabels>Lat Long</gml:axisLabels>
+                            <gml:origin>
+                                <gml:Point gml:id="origin-point-1-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                    <gml:pos>-180 89.9999445853145</gml:pos>
+                                </gml:Point>
+                            </gml:origin>
+                            <gml:offsetVector>7.55417484947468 0</gml:offsetVector>
+                            <gml:offsetVector>0 7.55224956060577</gml:offsetVector>                            
+                        </gml:RectifiedGrid>
+                    </gml:domainSet>
+                    <gml:rangeSet>           
+                        <gml:File>
+                            <gml:rangeParameters/>
+                            <gml:fileReference>http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/download?producer=hirlam_painepinta&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;bbox=-180,25.6476611861807,180,89.9999445853145&amp;origintime=2016-05-12T00:00:00Z&amp;starttime=2016-05-12T00:00:00Z&amp;endtime=2016-05-14T06:00:00Z&amp;format=grib2&amp;projection=epsg:4326&amp;levels=1000,925,850,700,500,400,300,250,200,100,50</gml:fileReference>     
+                            <gml:fileStructure codeSpace="http://www.ecmwf.int/publications/manuals/d/gribapi/param/"></gml:fileStructure>              
+                            <gml:mimeType>application/octet-stream</gml:mimeType>
+                        </gml:File>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord><swe:field name="Humidity" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity&amp;language=eng&amp;units=grib"/><swe:field name="Temperature" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Temperature&amp;language=eng&amp;units=grib"/><swe:field name="GeopHeight" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=GeopHeight&amp;language=eng&amp;units=grib"/><swe:field name="VelocityPotential" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=VelocityPotential&amp;language=eng&amp;units=grib"/><swe:field name="WindUMS" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=WindUMS&amp;language=eng&amp;units=grib"/><swe:field name="WindVMS" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=WindVMS&amp;language=eng&amp;units=grib"/><swe:field name="PseudoAdiabaticPotentialTemperature" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=PseudoAdiabaticPotentialTemperature&amp;language=eng&amp;units=grib"/><swe:field name="DewPoint" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=DewPoint&amp;language=eng&amp;units=grib"/></swe:DataRecord>
+                    </gmlcov:rangeType>              
+                </gmlcov:RectifiedGridCoverage>
+            </om:result>
+
+        </omso:GridSeriesObservation>
+    </wfs:member>
+    
+    <wfs:member>
+        <omso:GridSeriesObservation gml:id="WFS-l_pW3UqQ5Wb6qeNJSA_TV7dWRW6JTowpYWbbpdOs2_llx4efR060aeWzDtdOuHLLz59eWV06z8tOSFmZt_Lbh6VlZ.WnEybGbrs2Sd3TLy7YdkhqbMvbLsrYdnXLSoEegUvRGIFLIRSBS8EKgUqA_oFM8oFLgOSBSoDegUzSgUyygUySgNTbl6Zd9DDyw7a0JHXbpyaenmtapl28MvLD068stakfLv4SMunPo6VxVsuzfj09PNDf0y7umnDsrOr6d2SrNp1nV9O7JWm06xwqHPL1yb4OTThxYemnHQ39Mu7ppw7KmXbwy8sPTryy1oRMvehv07ujU38tOfTuqaduW1B_ClWMEepocOW_J1x5eVcWjTy2Ydt_hh07svDTu6YWpw5b9WXH00791amXhzzunTRmybNzn038suTj1y8vN_TkrLCzbdLp1m38suPDz6OnWjTy2Ydrp1w5ZefPryyunWflpyA-">
+
+                        <om:phenomenonTime>
+                <gml:TimePeriod gml:id="ph-time-1-2">
+                    <gml:beginPosition>2016-05-12T06:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2016-05-14T12:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="rs-time-1-2">
+                <gml:timePosition>2016-05-12T06:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:validTime>
+                <gml:TimePeriod gml:id="vt-time-1-2">
+                    <gml:beginPosition>2016-05-12T06:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2016-05-14T12:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:validTime>
+
+              <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam_painepinta"/>
+	                  <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time---1-2"> 
+			    <gml:timePosition>2016-05-12T06:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;language=eng&amp;units=grib"/>
+                        <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="s-1-2">
+                <sam:sampledFeature>
+                    <target:SurfaceWeatherTargetArea gml:id="sampledFeatureTarget-2-1"> 
+                        <target:geometry>
+                            <gml:Polygon gml:id="sampledFeatureTarget-polygon-2-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:coordinates>
+					    -180 25.6476611861807 -180 89.9999445853145 180 89.9999445853145 180 25.6476611861807 -180 25.6476611861807
+                                        </gml:coordinates>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>                
+                        </target:geometry>
+            		<target:observableProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;language=eng&amp;units=grib"/>
+                    </target:SurfaceWeatherTargetArea>
+                </sam:sampledFeature>
+                <sams:shape>
+                    <gml:Polygon gml:id="samplingFeatureTarget-polygon-2-1">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:coordinates>
+					-180 25.6476611861807 -180 89.9999445853145 180 89.9999445853145 180 25.6476611861807 -180 25.6476611861807
+	  	                </gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>                    
+                </sams:shape>            
+            </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>           
+
+	                <om:result>        
+                <gmlcov:RectifiedGridCoverage gml:id="rgd-2-1">
+                    <gml:domainSet>
+                        <gml:RectifiedGrid gml:id="rg-2-1" dimension="2">
+                            <gml:limits>
+                                <gml:GridEnvelope>                                                                           
+                                    <gml:low>0 0</gml:low>
+                                    <gml:high>1030 816</gml:high>
+                                </gml:GridEnvelope>
+                            </gml:limits>
+                            <gml:axisLabels>Lat Long</gml:axisLabels>
+                            <gml:origin>
+                                <gml:Point gml:id="origin-point-2-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                    <gml:pos>-180 89.9999445853145</gml:pos>
+                                </gml:Point>
+                            </gml:origin>
+                            <gml:offsetVector>7.55417484947468 0</gml:offsetVector>
+                            <gml:offsetVector>0 7.55224956060577</gml:offsetVector>                            
+                        </gml:RectifiedGrid>
+                    </gml:domainSet>
+                    <gml:rangeSet>           
+                        <gml:File>
+                            <gml:rangeParameters/>
+                            <gml:fileReference>http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/download?producer=hirlam_painepinta&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;bbox=-180,25.6476611861807,180,89.9999445853145&amp;origintime=2016-05-12T06:00:00Z&amp;starttime=2016-05-12T06:00:00Z&amp;endtime=2016-05-14T12:00:00Z&amp;format=grib2&amp;projection=epsg:4326&amp;levels=1000,925,850,700,500,400,300,250,200,100,50</gml:fileReference>     
+                            <gml:fileStructure codeSpace="http://www.ecmwf.int/publications/manuals/d/gribapi/param/"></gml:fileStructure>              
+                            <gml:mimeType>application/octet-stream</gml:mimeType>
+                        </gml:File>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord><swe:field name="Humidity" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity&amp;language=eng&amp;units=grib"/><swe:field name="Temperature" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Temperature&amp;language=eng&amp;units=grib"/><swe:field name="GeopHeight" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=GeopHeight&amp;language=eng&amp;units=grib"/><swe:field name="VelocityPotential" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=VelocityPotential&amp;language=eng&amp;units=grib"/><swe:field name="WindUMS" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=WindUMS&amp;language=eng&amp;units=grib"/><swe:field name="WindVMS" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=WindVMS&amp;language=eng&amp;units=grib"/><swe:field name="PseudoAdiabaticPotentialTemperature" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=PseudoAdiabaticPotentialTemperature&amp;language=eng&amp;units=grib"/><swe:field name="DewPoint" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=DewPoint&amp;language=eng&amp;units=grib"/></swe:DataRecord>
+                    </gmlcov:rangeType>              
+                </gmlcov:RectifiedGridCoverage>
+            </om:result>
+
+        </omso:GridSeriesObservation>
+    </wfs:member>
+    
+</wfs:FeatureCollection>
