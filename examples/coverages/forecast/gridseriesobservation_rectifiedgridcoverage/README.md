@@ -33,11 +33,12 @@ Remarks:
 
 * Sampled feature is presented as a forecast region, and the corresponding the sampling feature as having a Polygon shape.
 * The RectifiedGrid used as the domain set value only has 2 dimensions instead of 4 (lat, lon, time, height). The missing time dimension is just an error, it could be given using the Unix time axis as in the [MultiPointCoverage example](../gridseriesobservation_multipointcoverage/README.md), but the height dimension is more trick due to the unevenly spaced vertical levels. This could be solved using ReferenceableGrid, but as all the other axes here a evenly spaced, it seems like an overkill. CIS 1.1 grids allowing a mix of regular and unregular axes would be very handly here.
+* The time dimension has evenly spaced values between 2016-05-11T18:00:00Z and 2016-05-14T00:00:00Z (1 hour resolution), but since this dimension is not described in the domain set, there is really no way to know that.
 * The range set of the coverage is retrieved from an external URL (proprietary binary download service) encoded in GRIB format.
 
 Other stored queries in FMI's WFS service with similar coverage-valued results:
 
-* [fmi::forecast::climatology::scenario::grid](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::hirlam::surface::finland::grid)
+* [fmi::forecast::climatology::scenario::grid](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::climatology::scenario::grid)
 * [fmi::forecast::hbm::grid](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::hbm::grid)
 * [fmi::forecast::helmi::grid](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::helmi::grid)
 * [fmi::forecast::hirlam::surface::finland::grid](http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=DescribeStoredQueries&version=2.0.0&service=WFS&storedquery_id=hirlam::surface::finland::grid) (only the surface level included)
