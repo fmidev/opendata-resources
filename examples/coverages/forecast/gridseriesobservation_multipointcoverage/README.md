@@ -20,7 +20,7 @@ storedquery_id | fmi::forecast::hirlam::surface::cities::multipointcoverage
 Property               | Value
 -----------------------|-------------------
 FeatureType            | omso:GridSeriesObservation
-observedProperty       | http://data.fmi.fi/fmi-apikey/\<insert-apikey-here\>/meta?observableProperty=forecast&amp;param=GeopHeight,Temperature,Pressure,Humidity,WindDirection,WindSpeedMS,WindUMS,WindVMS,MaximumWind,WindGust,DewPoint,TotalCloudCover,WeatherSymbol3,LowCloudCover,MediumCloudCover,HighCloudCover,Precipitation1h,PrecipitationAmount,RadiationGlobalAccumulation,RadiationLWAccumulation,RadiationNetSurfaceLWAccumulation,RadiationNetSurfaceSWAccumulation,RadiationDiffuseAccumulation&amp;language=eng
+observedProperty       | `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=GeopHeight,Temperature,Pressure,Humidity,WindDirection,WindSpeedMS,WindUMS,WindVMS,MaximumWind,WindGust,DewPoint,TotalCloudCover,WeatherSymbol3,LowCloudCover,MediumCloudCover,HighCloudCover,Precipitation1h,PrecipitationAmount,RadiationGlobalAccumulation,RadiationLWAccumulation,RadiationNetSurfaceLWAccumulation,RadiationNetSurfaceSWAccumulation,RadiationDiffuseAccumulation&amp;language=eng`
 procedure              | http://xml.fmi.fi/inspire/process/hirlam
 result coverage type   | gmlcov:MultiPointCoverage
 result domain set type | gmlcov:SimpleMultiPoint
