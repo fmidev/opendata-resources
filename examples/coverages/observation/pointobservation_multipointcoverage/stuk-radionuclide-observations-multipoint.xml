@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection
+  timeStamp="2016-04-28T12:19:46Z"
+  numberMatched="8"
+  numberReturned="8"
+  xmlns:wfs="http://www.opengis.net/wfs/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:om="http://www.opengis.net/om/2.0"
+  xmlns:ompr="http://inspire.ec.europa.eu/schemas/ompr/3.0"
+  xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/3.0"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:gmd="http://www.isotc211.org/2005/gmd"
+  xmlns:gco="http://www.isotc211.org/2005/gco"
+  xmlns:swe="http://www.opengis.net/swe/2.0"
+  xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+  xmlns:sam="http://www.opengis.net/sampling/2.0"
+  xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
+  xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0"
+  xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+  http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
+  http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
+  http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
+  http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
+  http://inspire.ec.europa.eu/schemas/ompr/3.0 http://inspire.ec.europa.eu/schemas/ompr/3.0/Processes.xsd
+  http://inspire.ec.europa.eu/schemas/omso/3.0 http://inspire.ec.europa.eu/schemas/omso/3.0/SpecialisedObservations.xsd
+  http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0 http://xml.fmi.fi/schema/om/atmosphericfeatures/1.0/atmosphericfeatures.xsd">
+  
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-r1q_ik37Zon_gOQlded2s_blIaKJTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrFpUYsnTFk6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsmNRixdMWrpgwtM7Nt089OTnJJBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-1">
+          <gml:beginPosition>2016-04-14T12:12:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-21T11:15:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-1">
+          <gml:timePosition>2016-04-25T05:49:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-1-fmisid-103428">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-1-fmisid-103428-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103428</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+              <target:representativePoint xlink:href="#point-1-fmisid-103428"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-1-fmisid-103428" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Helsinki</gml:name>
+              <gml:pos>60.20905 25.05385</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-1">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>60.20905 25.05385</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>25452 2504.20 5 242.50 5 1.60 9 0.70 21</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210">
+                <swe:Quantity>
+                  <swe:label>Pb-210 activity concentration</swe:label>
+                  <swe:description>Pb-210 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Pb-210 result</swe:label>
+                  <swe:description>Uncertainty of Pb-210 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22">
+                <swe:Quantity>
+                  <swe:label>Sodium 22 activity concentration</swe:label>
+                  <swe:description>Sodium 22 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Sodium 22 result</swe:label>
+                  <swe:description>Uncertainty of Sodium 22 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-cdcyWCLXHEKeIYtfhXjluC0pre6JTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrBpUYsnTFg6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsXNRg1dMmrpgwtM7Nt089OTnJLBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-2">
+          <gml:beginPosition>2016-04-04T12:10:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-19T05:25:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-2">
+          <gml:timePosition>2016-04-25T05:51:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-2-fmisid-103429">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-2-fmisid-103429-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103429</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Kotka</gml:name>
+              <target:representativePoint xlink:href="#point-2-fmisid-103429"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Kotka</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-2-fmisid-103429" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Kotka</gml:name>
+              <gml:pos>60.48318 26.91808</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-2">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>60.48318 26.91808</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>171562 1620.80 7 1.10 8 0.20 14</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22">
+                <swe:Quantity>
+                  <swe:label>Sodium 22 activity concentration</swe:label>
+                  <swe:description>Sodium 22 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Sodium 22 result</swe:label>
+                  <swe:description>Uncertainty of Sodium 22 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-5zhSnjFZ4VhndYh_jg1z3XtiL9uJTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrFjUYNnTJq6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsXFRg2dMGDpgwtM7Nt089OTnJNBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-3">
+          <gml:beginPosition>2016-04-11T06:25:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-18T06:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-3">
+          <gml:timePosition>2016-04-25T05:45:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-3-fmisid-103430">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-3-fmisid-103430-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103430</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Imatra</gml:name>
+              <target:representativePoint xlink:href="#point-3-fmisid-103430"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Rautjärvi</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-3-fmisid-103430" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Imatra</gml:name>
+              <gml:pos>61.13229 28.82663</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-3">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-3" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>61.13229 28.82663</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>21038 3018.30 6 175.40 20 1.60 9</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210">
+                <swe:Quantity>
+                  <swe:label>Pb-210 activity concentration</swe:label>
+                  <swe:description>Pb-210 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Pb-210 result</swe:label>
+                  <swe:description>Uncertainty of Pb-210 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-yxkI1OP24dUd_5SNHwTlyLfYX1SJTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrBpUYNXTFw6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsWNRg1dMWLpgwtM7Nt089OTnJPBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-4">
+          <gml:beginPosition>2016-04-04T05:18:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-11T05:11:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-4">
+          <gml:timePosition>2016-04-25T08:07:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-4-fmisid-103431">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-4-fmisid-103431-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103431</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Ivalo</gml:name>
+              <target:representativePoint xlink:href="#point-4-fmisid-103431"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Inari</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-4-fmisid-103431" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Ivalo</gml:name>
+              <gml:pos>68.64000 27.57000</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-4">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-4" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>68.64000 27.57000</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>25817 1152.30 6 179.10 20 0.30 14</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210">
+                <swe:Quantity>
+                  <swe:label>Pb-210 activity concentration</swe:label>
+                  <swe:description>Pb-210 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Pb-210 result</swe:label>
+                  <swe:description>Uncertainty of Pb-210 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-n7s2_UQjD9mEN.Hmi4gQJlDYFqKJTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrFjUYNnTFw6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsXFRg2dMmzpgwtM7Nt089OTnJRBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-5">
+          <gml:beginPosition>2016-04-11T06:18:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-18T06:26:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-5">
+          <gml:timePosition>2016-04-22T07:18:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-5-fmisid-103432">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-5-fmisid-103432-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103432</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Kuopio</gml:name>
+              <target:representativePoint xlink:href="#point-5-fmisid-103432"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Kuopio</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-5-fmisid-103432" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Kuopio</gml:name>
+              <gml:pos>62.89195 27.63414</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-5">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-5" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>62.89195 27.63414</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>25651 2635.70 5 230.60 5 0.50 24</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210">
+                <swe:Quantity>
+                  <swe:label>Pb-210 activity concentration</swe:label>
+                  <swe:description>Pb-210 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Pb-210 result</swe:label>
+                  <swe:description>Uncertainty of Pb-210 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-.Msda7QuaXnVVZ_61tp6UV_KIp.JTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrFjUYNnTVo6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsXFRg2dNWrpgwtM7Nt089OTnJTBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-6">
+          <gml:beginPosition>2016-04-11T06:54:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-18T06:55:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-6">
+          <gml:timePosition>2016-04-25T07:21:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-6-fmisid-103433">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-6-fmisid-103433-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103433</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Rovaniemi</gml:name>
+              <target:representativePoint xlink:href="#point-6-fmisid-103433"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Rovaniemi</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-6-fmisid-103433" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Rovaniemi</gml:name>
+              <gml:pos>66.51285 25.67774</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-6">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-6" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>66.51285 25.67774</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>126819 1834.10 7 0.30 13 0.20 18</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22">
+                <swe:Quantity>
+                  <swe:label>Sodium 22 activity concentration</swe:label>
+                  <swe:description>Sodium 22 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Sodium 22 result</swe:label>
+                  <swe:description>Uncertainty of Sodium 22 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-EAvv8Pt.RDeU8cdOPDeUe3th_PGJTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrBpUYNnTRk6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsWNRg2dMHDpgwtM7Nt089OTnJVBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-7">
+          <gml:beginPosition>2016-04-04T06:42:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-11T06:08:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-7">
+          <gml:timePosition>2016-04-25T08:18:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-7-fmisid-103434">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-7-fmisid-103434-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103434</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Sodankylä</gml:name>
+              <target:representativePoint xlink:href="#point-7-fmisid-103434"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Sodankylä</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-7-fmisid-103434" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Sodankylä</gml:name>
+              <gml:pos>67.36505 26.62807</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-7">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-7" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>67.36505 26.62807</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>25233 1085.90 6 195.30 20 0.30 7</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210">
+                <swe:Quantity>
+                  <swe:label>Pb-210 activity concentration</swe:label>
+                  <swe:description>Pb-210 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Pb-210 result</swe:label>
+                  <swe:description>Uncertainty of Pb-210 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+  <wfs:member>
+    <omso:PointObservation gml:id="WFS-Q57PMcCDANk6iWcrJrIDC7jV9PWJTowuInPp11unW_Fzy8u2Hpp37ubp1h08nTrlhyad.7rj2acmVbhx9NPbT08rce_djy7unLD0079zp1sw9MvPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNFrFjUYOXTBg6YMLTGx8udakWhTjunTRk1cM7LuyVNO3LXQyYMWy1g0WsmFRg4dNWzpgwtM7Nt089OTnJXBLGdGvL577.WS_v7ZeXflp6YcWzLGzNmHpl59I2ttw.Imnn0w7seWlauhAbW7rtn5qfTD00793OcJrceuHZp6eZO7Nvia3Pph6ad.6p54Za4sOnlf5Ycmnfu649mnJl5tzn038suTj1y8vN_TkrxE59Out0634ueXl2w9NO_dzdOsOnk6dcsOTTv3dcezTkyrcOPpp7aenlbj37seXd05YemnfudOtmHpl59HTrb12dNPDfp3dMe_tl5Yc.VodNO3LT6ZeE4QA--">
+      <om:phenomenonTime>
+        <gml:TimePeriod gml:id="time1-1-8">
+          <gml:beginPosition>2016-04-11T09:00:00Z</gml:beginPosition>
+          <gml:endPosition>2016-04-20T08:56:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="time2-1-8">
+          <gml:timePosition>2016-04-25T05:53:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/stuk/air_radionuclides"/>
+      <om:parameter>
+        <om:NamedValue>
+          <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/analysisNumber"/>
+          <om:value>
+            <gml:integerValue>1</gml:integerValue>
+          </om:value>
+        </om:NamedValue>
+      </om:parameter>
+      <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=AC_P7D_avg&amp;language=eng"/>
+      <om:featureOfInterest>
+        <sams:SF_SpatialSamplingFeature gml:id="sampling-feature-1-1-8-fmisid-103435">
+          <sam:sampledFeature>
+            <target:Location gml:id="obsloc-8-fmisid-103435-pos">
+              <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">103435</gml:identifier>
+              
+              <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Kajaani</gml:name>
+              <target:representativePoint xlink:href="#point-8-fmisid-103435"/>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Kajaani</target:region>
+              <target:region codeSpace="http://xml.fmi.fi/namespace/location/country">Finland</target:region>
+            </target:Location>
+          </sam:sampledFeature>
+          <sams:shape>
+            <gml:Point gml:id="point-8-fmisid-103435" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gml:name>Kajaani</gml:name>
+              <gml:pos>64.08474 27.70835</gml:pos>
+            </gml:Point>
+          </sams:shape>
+        </sams:SF_SpatialSamplingFeature>
+      </om:featureOfInterest>
+      <om:result>
+        <gmlcov:MultiPointCoverage gml:id="mpcv1-1-1-8">
+          <gml:domainSet>
+            <gmlcov:SimpleMultiPoint gml:id="mp1-1-1-8" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+              <gmlcov:positions>64.08474 27.70835</gmlcov:positions>
+            </gmlcov:SimpleMultiPoint>
+          </gml:domainSet>
+          <gml:rangeSet>
+            <gml:DataBlock>
+              <gml:rangeParameters />
+              <gml:doubleOrNilReasonTupleList>175770 2630.00 5 232.80 5 0.30 11 0.30 8</gml:doubleOrNilReasonTupleList>
+            </gml:DataBlock>
+          </gml:rangeSet>
+          <gml:coverageFunction>
+            <gml:CoverageMappingRule>
+              <gml:ruleDefinition>Linear</gml:ruleDefinition>
+            </gml:CoverageMappingRule>
+          </gml:coverageFunction>
+          <gmlcov:rangeType>
+            <swe:DataRecord>
+              <swe:field name="air-volume">
+                <swe:Quantity>
+                  <swe:label>Air volume</swe:label>
+                  <swe:description>Total volume of air sampled during the measurement.</swe:description>
+                  <swe:uom code="m3"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7">
+                <swe:Quantity>
+                  <swe:label>Beryllium 7 activity concentration</swe:label>
+                  <swe:description>Beryllium 7 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Be-7-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Beryllium 7 result</swe:label>
+                  <swe:description>Uncertainty of Beryllium 7 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210">
+                <swe:Quantity>
+                  <swe:label>Pb-210 activity concentration</swe:label>
+                  <swe:description>Pb-210 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Pb-210-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Pb-210 result</swe:label>
+                  <swe:description>Uncertainty of Pb-210 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22">
+                <swe:Quantity>
+                  <swe:label>Sodium 22 activity concentration</swe:label>
+                  <swe:description>Sodium 22 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Na-22-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Sodium 22 result</swe:label>
+                  <swe:description>Uncertainty of Sodium 22 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137">
+                <swe:Quantity>
+                  <swe:label>Cesium 137 activity concentration</swe:label>
+                  <swe:description>Cesium 137 radionuclide activity concentration in air.</swe:description>
+                  <swe:uom code="uBq/m3" />
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="Cs-137-uncertainty">
+                <swe:Quantity>
+                  <swe:label>Relative uncertainty of Cesium 137 result</swe:label>
+                  <swe:description>Uncertainty of Cesium 137 nuclide activity concentration result,
+                    percent (+/- X%) at sigma 1 (~68%) confidence interval. Smaller the percentage means
+                    more certain result.</swe:description>
+                  <swe:uom code="%"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </gmlcov:rangeType>
+        </gmlcov:MultiPointCoverage>
+      </om:result>
+    </omso:PointObservation>
+  </wfs:member>
+</wfs:FeatureCollection>
