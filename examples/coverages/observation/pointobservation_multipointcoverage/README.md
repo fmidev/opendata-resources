@@ -35,4 +35,4 @@ Remarks:
 * Each feature represents a single measurement done at a single measurement location during the phenomenonTime period. The observation is not instantaneous as it takes several days to collect a single sample.
 * The domain set of the coverage consists of a single 2D point. Thus the domain set type could also simply be a gml:Point.
 * The data is not encoded as PointTimeSeriesObservation because only the detected radionuclides for each observation period are reported. Thus the range set and range type of the coverages may change from observation to the next even if the location stays the same.
-* The result contains both the radionuclide activity concentration for each detected nuclide as Bq/m3 and the uncertainty of the result percent (+/- X%) at sigma 1 (~68%) confidence interval.
+* The result contains both the radionuclide activity concentration for each detected nuclide as uBq/m3 and the uncertainty of the result percent (+/- X%) at sigma 1 (~68%) confidence interval.
