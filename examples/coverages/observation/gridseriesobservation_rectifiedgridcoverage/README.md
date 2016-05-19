@@ -31,7 +31,7 @@ Remarks:
 
 * The procedure referenced is missing.
 * The RectifiedGrid used as the domain set value is missing a CRS definition. This is an error.
-* The RectifiedGrid used as the domain set value only has 2 dimensions instead of 4 (lat, lon, time). The missing time dimension is just an error, it could be given using the Unix time axis as in the [MultiPointCoverage example](../gridseriesobservation_multipointcoverage/README.md), but the height dimension is more trick due to the unevenly spaced vertical levels. This could be solved using ReferenceableGrid, but as all the other axes here a evenly spaced, it seems like an overkill. CIS 1.1 grids allowing a mix of regular and unregular axes would be very handly here.
+* The RectifiedGrid used as the domain set value only has 2 dimensions instead of 3 (lat, lon, time). The missing time dimension is just an error, it could be given using the Unix time axis as in the [MultiPointCoverage example](../gridseriesobservation_multipointcoverage/README.md)
 * The time dimension has evenly spaced values between 1961-01-01T00:00:00Z and 2012-12-01T00:00:00Z (1 month resolution), but since this dimension is not described in the domain set, there is really no way to know that.
 * The range set of the coverage is retrieved from an external URL (proprietary binary download service) encoded in GRIB format.
 
