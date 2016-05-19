@@ -35,5 +35,5 @@ Remarks:
 * The time dimension has evenly spaced values between 1961-01-01T00:00:00Z and 2012-12-01T00:00:00Z (1 month resolution), but since this dimension is not described in the domain set, there is really no way to know that.
 * The range set of the coverage is retrieved from an external URL (proprietary binary download service) encoded in GRIB format.
 
-[Example XML file](./fmi-wfs-observations-monthly-temp_and_prec_interpolated.xml)
+[Example XML file](./fmi-wfs-observations-monthly-temp_and_prec_interpolated-grid.xml)
 
