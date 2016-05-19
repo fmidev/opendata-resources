@@ -6,7 +6,7 @@ Predicted values of a set of weather parameters at several heights (atmospheric 
 
 ### Request
 
-	`http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=GetFeature&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::hirlam::pressure::grid`
+	http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=GetFeature&version=2.0.0&service=WFS&storedquery_id=fmi::forecast::hirlam::pressure::grid
 
 Parameter      | Value
 ---------------|----------------
@@ -20,14 +20,14 @@ storedquery_id | fmi::forecast::hirlam::pressure::grid
 Property               | Value
 -----------------------|-------------------
 FeatureType            | omso:GridSeriesObservation
-observedProperty       | `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;language=eng&amp;units=grib`
+observedProperty       | `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&language=eng&units=grib`
 procedure              | http://xml.fmi.fi/inspire/process/hirlam_painepinta
 result coverage type   | gmlcov:RectifiedGridCoverage
 result domain set type | gmlcov:RectifiedGrid
 CRS of the domain set  | http://www.opengis.net/def/crs/EPSG/0/4326
-result range set type  | gml:File pointing to an external download access point `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/download?producer=hirlam_painepinta&amp;param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&amp;bbox=-180,25.6476611861807,180,89.9999445853145&amp;origintime=2016-05-11T18:00:00Z&amp;starttime=2016-05-11T18:00:00Z&amp;endtime=2016-05-14T00:00:00Z&amp;format=grib2&amp;projection=epsg:4326&amp;levels=1000,925,850,700,500,400,300,250,200,100,50`
+result range set type  | gml:File pointing to an external download access point `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/download?producer=hirlam_painepinta&param=Humidity,Temperature,GeopHeight,VelocityPotential,WindUMS,WindVMS,PseudoAdiabaticPotentialTemperature,DewPoint&bbox=-180,25.6476611861807,180,89.9999445853145&origintime=2016-05-11T18:00:00Z&starttime=2016-05-11T18:00:00Z&endtime=2016-05-14T00:00:00Z&format=grib2&projection=epsg:4326&levels=1000,925,850,700,500,400,300,250,200,100,50`
 
-[XML file](./fmi-wfs-forecast-hirlam-levels.xml)
+[Example XML file](./fmi-wfs-forecast-hirlam-levels.xml)
 
 Remarks:
 
