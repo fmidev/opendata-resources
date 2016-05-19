@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection
+    timeStamp="2016-05-12T08:41:03Z"
+    numberMatched="1"
+    numberReturned="1"
+        xmlns:wfs="http://www.opengis.net/wfs/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:om="http://www.opengis.net/om/2.0"
+    xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/3.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:swe="http://www.opengis.net/swe/2.0"
+    xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+    xmlns:inspire="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+    xmlns:sam="http://www.opengis.net/sampling/2.0"
+    xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" 
+    xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0"
+    xsi:schemaLocation="
+    http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+    http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
+    http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
+    http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
+    http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
+    http://inspire.ec.europa.eu/schemas/omso/3.0 http://inspire.ec.europa.eu/schemas/omso/3.0/SpecialisedObservations.xsd
+    http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd
+    http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0 http://xml.fmi.fi/schema/om/atmosphericfeatures/1.0/atmosphericfeatures.xsd">
+
+    
+    <wfs:member>
+        <omso:GridSeriesObservation gml:id="WFS-Sw1.x7cidBx.kVJqlC8hZr7XKcuJTowqYWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6dbd.7po2eXTrPy05IWZm38tuHpWVn5acTJsZuuzZJ3dMvLth2SGpv5ac.ndU07ctqn2FChGhw5b8nXHl5Vnbd.7po2eWpw5b9WXH00791amXhzzunTRmybNzn038suTj1y8vN_TkrTCzbdLp1vxc8vLth6ad.7m6dd8uHpoy8nTrbv3dNGzy6dZ.WnIAA--">
+
+                        <om:phenomenonTime>
+                <gml:TimePeriod gml:id="ph-time-1-0">
+                    <gml:beginPosition>1961-01-01T00:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2012-12-01T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="rs-time-1-0">
+                <gml:timePosition>1961-01-01T00:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:validTime>
+                <gml:TimePeriod gml:id="vt-time-1-0">
+                    <gml:beginPosition>1961-01-01T00:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2012-12-01T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:validTime>
+
+              <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/monthly"/>
+	                  <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time---1-0"> 
+			    <gml:timePosition>1961-01-01T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=MonthlyMeanTemperature,MonthlyPrecipitation&amp;language=eng&amp;units=grib"/>
+                        <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="s-1-0">
+                <sam:sampledFeature>
+                    <target:SurfaceWeatherTargetArea gml:id="sampledFeatureTarget-0-1"> 
+                        <target:geometry>
+                            <gml:Polygon gml:id="sampledFeatureTarget-polygon-0-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:coordinates>
+					    15.9689043139365 59.6117693413028 15.9689043139365 70.0798784441389 33.0613124198255 70.0798784441389 33.0613124198255 59.6117693413028 15.9689043139365 59.6117693413028
+                                        </gml:coordinates>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>                
+                        </target:geometry>
+            		<target:observableProperty xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=MonthlyMeanTemperature,MonthlyPrecipitation&amp;language=eng&amp;units=grib"/>
+                    </target:SurfaceWeatherTargetArea>
+                </sam:sampledFeature>
+                <sams:shape>
+                    <gml:Polygon gml:id="samplingFeatureTarget-polygon-0-1">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:coordinates>
+					15.9689043139365 59.6117693413028 15.9689043139365 70.0798784441389 33.0613124198255 70.0798784441389 33.0613124198255 59.6117693413028 15.9689043139365 59.6117693413028
+	  	                </gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>                    
+                </sams:shape>            
+            </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>           
+
+	                <om:result>        
+                <gmlcov:RectifiedGridCoverage gml:id="rgd-0-1">
+                    <gml:domainSet>
+                        <gml:RectifiedGrid gml:id="rg-0-1" dimension="2">
+                            <gml:limits>
+                                <gml:GridEnvelope>                                                                           
+                                    <gml:low>0 0</gml:low>
+                                    <gml:high>657 1144</gml:high>
+                                </gml:GridEnvelope>
+                            </gml:limits>
+                            <gml:axisLabels>Lat Long</gml:axisLabels>
+                            <gml:origin>
+                                <gml:Point gml:id="origin-point-0-1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                                    <gml:pos>15.9689043139365 70.0798784441389</gml:pos>
+                                </gml:Point>
+                            </gml:origin>
+                            <gml:offsetVector>0.998477929984779 0</gml:offsetVector>
+                            <gml:offsetVector>0 0.999125874125874</gml:offsetVector>                            
+                        </gml:RectifiedGrid>
+                    </gml:domainSet>
+                    <gml:rangeSet>           
+                        <gml:File>
+                            <gml:rangeParameters/>
+                            <gml:fileReference>http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/download?producer=monthly&amp;param=MonthlyMeanTemperature,MonthlyPrecipitation&amp;bbox=15.9689043139365,59.6117693413028,33.0613124198255,70.0798784441389&amp;origintime=1961-01-01T00:00:00Z&amp;starttime=1961-01-01T00:00:00Z&amp;endtime=2012-12-01T00:00:00Z&amp;format=grib2&amp;projection=epsg:4326</gml:fileReference>     
+                            <gml:fileStructure codeSpace="http://www.ecmwf.int/publications/manuals/d/gribapi/param/"></gml:fileStructure>              
+                            <gml:mimeType>application/octet-stream</gml:mimeType>
+                        </gml:File>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord><swe:field name="MonthlyMeanTemperature" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=MonthlyMeanTemperature&amp;language=eng&amp;units=grib"/><swe:field name="MonthlyPrecipitation" xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=forecast&amp;param=MonthlyPrecipitation&amp;language=eng&amp;units=grib"/></swe:DataRecord>
+                    </gmlcov:rangeType>              
+                </gmlcov:RectifiedGridCoverage>
+            </om:result>
+
+        </omso:GridSeriesObservation>
+    </wfs:member>
+    
+</wfs:FeatureCollection>
