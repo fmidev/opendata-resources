@@ -20,14 +20,14 @@ storedquery_id | fmi::observations::weather::cities::multipointcoverage
 Property               | Value
 -----------------------|-------------------
 FeatureType            | omso:GridSeriesObservation
-observedProperty       | `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WS_10MIN,WD_10MIN,WG_10MIN,T,RH,TD,P_SEA,R_1H,VIS,N_MAN,WAWA&amp;language=eng`
+observedProperty       | `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&param=WS_10MIN,WD_10MIN,WG_10MIN,T,RH,TD,P_SEA,R_1H,VIS,N_MAN,WAWA&language=eng`
 procedure              | http://xml.fmi.fi/inspire/process/opendata
 result coverage type   | gmlcov:MultiPointCoverage
 result domain set type | gmlcov:SimpleMultiPoint
-CRS of the domain set  | http://xml.fmi.fi/gml/crs/compoundCRS.php?crs=4258&amp;time=unixtime (3-dim, EPSG:4258 + time)
+CRS of the domain set  | http://xml.fmi.fi/gml/crs/compoundCRS.php?crs=4258&time=unixtime (3-dim, EPSG:4258 + time)
 result range set type  | gml:DataBlock
 
-[XML file](./fmi-wfs-weather-observations-surface-cities-multipoint.xml)
+[Example XML file](./fmi-wfs-weather-observations-surface-cities-multipoint.xml)
 
 Remarks:
 
@@ -41,7 +41,7 @@ Registered lightning strike observations encoded as a MultiPointCoverage.
 
 ### Request
 
-	`http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=GetFeature&version=2.0.0&service=WFS&storedquery_id=fmi::observations::lightning::multipointcoverage`
+	http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/wfs?request=GetFeature&version=2.0.0&service=WFS&storedquery_id=fmi::observations::lightning::multipointcoverage
 
 Parameter      | Value
 ---------------|----------------
@@ -55,14 +55,14 @@ storedquery_id | fmi::observations::lightning::multipointcoverage
 Property               | Value
 -----------------------|-------------------
 FeatureType            | omso:GridSeriesObservation
-observedProperty       | `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WS_10MIN,WD_10MIN,WG_10MIN,T,RH,TD,P_SEA,R_1H,VIS,N_MAN,WAWA&amp;language=eng`
+observedProperty       | `http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&param=WS_10MIN,WD_10MIN,WG_10MIN,T,RH,TD,P_SEA,R_1H,VIS,N_MAN,WAWA&language=eng`
 procedure              | http://xml.fmi.fi/inspire/process/lightning
 result coverage type   | gmlcov:MultiPointCoverage
 result domain set type | gmlcov:SimpleMultiPoint
-CRS of the domain set  | http://xml.fmi.fi/gml/crs/compoundCRS.php?crs=4258&amp;time=unixtime (3-dim, EPSG:4258 + time)
+CRS of the domain set  | http://xml.fmi.fi/gml/crs/compoundCRS.php?crs=4258&time=unixtime (3-dim, EPSG:4258 + time)
 result range set type  | gml:DataBlock
 
-[XML file](./fmi-wfs-lightning-strikes-multipoint.xml)
+[Example XML file](./fmi-wfs-lightning-strikes-multipoint.xml)
 
 Remarks:
 
