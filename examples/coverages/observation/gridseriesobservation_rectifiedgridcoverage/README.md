@@ -1,6 +1,6 @@
-# Title of folder
+# Weather observation data, GridSeriesObservation with RectifiedCoverage result
 
-## Grid-interpolated Monthly precipitation rate and mean temperature observations
+## Grid-interpolated monthly precipitation rate and mean temperature observations
 
 Monthly precipitation rate and mean temperature interpolated into a grid. The data is returned in GRIB format.
 
