@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0"
+		       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		       xmlns:xlink="http://www.w3.org/1999/xlink"
+		       xmlns:om="http://www.opengis.net/om/2.0"
+		       xmlns:ompr="http://inspire.ec.europa.eu/schemas/ompr/3.0"
+		       xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/3.0"
+		       xmlns:gml="http://www.opengis.net/gml/3.2"
+		       xmlns:gmllr="http://www.opengis.net/gml/3.3/lr"
+		       xmlns:gmd="http://www.isotc211.org/2005/gmd"
+		       xmlns:gco="http://www.isotc211.org/2005/gco"
+		       xmlns:swe="http://www.opengis.net/swe/2.0"
+		       xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+		       xmlns:sam="http://www.opengis.net/sampling/2.0"
+		       xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
+		       xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95"
+		       timeStamp="2016-05-12T08:33:09Z"
+		       numberMatched="6"
+		       numberReturned="6"
+		       xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+					   http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
+					   http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
+					   http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
+					   http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
+					   http://inspire.ec.europa.eu/schemas/ompr/3.0 http://inspire.ec.europa.eu/schemas/ompr/3.0/Processes.xsd
+					   http://inspire.ec.europa.eu/schemas/omso/3.0 http://inspire.ec.europa.eu/schemas/omso/3.0/SpecialisedObservations.xsd
+					   http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95 http://xml.fmi.fi/schema/om/atmosphericfeatures/0.95/atmosphericfeatures.xsd
+					   http://www.opengis.net/gml/3.3/lr http://schemas.opengis.net/gml/3.3/linearRef.xsd">
+    <wfs:member>
+        <omso:ProfileObservation gml:id="WFS-ae6GCXigm7NhIyF.4Gy6mnN.fpGJTowtIWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6dbcPPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNVrFlUYOHTNg6YMLTGx8udaUWhTjum7RkzZ2XdkqaduWuhkwYtlrBqtYsqjBw6ZsHTBhaZ2bbp56cnOsxiwYsGDBrbcPiJp59MO7HlpWroQGltw.IvDfj0c5wY5m9ty9Mu.hh5YduXpl5c6xKkFrbdPPnp3Z6mXx0rGnYZza3dds_NT6Yemnfu51hMWpw5b8nXHl5Sck9zW49cOzT08yd2bfE1ufTD00791Tzwy1kTYNOo3OfTfyy5OPXLy839OSukLNt0unW_Fzy8u2Hpp37ubp13y4emjLydOtuHn0dOtvXZ008N.nd0x7.2Xlhz5Wh007ctPpl4VhMQA-">
+            <om:phenomenonTime>
+                <gml:TimeInstant gml:id="time1-1">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time2-1">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/mast"/>
+            <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:value>atmosphere</om:value>
+                </om:NamedValue>
+            </om:parameter>
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=TA&amp;language=eng"/>
+            <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="ssf-1-fmisid-101000">
+                    <sam:sampledFeature />
+                    <sam:relatedSamplingFeature>
+                        <sam:SamplingFeatureComplex>
+                            <sam:role xlink:title="Related groud observation station" xlink:href="http://xml.fmi.fi/namespace/relation/groud-observation-station"/>
+                            <sam:relatedSamplingFeature>
+                                <sams:SF_SpatialSamplingFeature gml:id="obs-station-1-fmisid-101000">
+                                    <gml:description>Meteorological observation station for Espoo mast observations</gml:description>
+                                    <sam:sampledFeature>
+                                        <target:Location gml:id="obsloc-1-fmisid-101000-pos">
+                                            <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101000</gml:identifier>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Espoo Kivenlahti</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">-16000092</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2838</gml:name>
+                                            <target:representativePoint xlink:href="#point-101000"/>
+                                            <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Espoo</target:region>
+                                        </target:Location>
+                                    </sam:sampledFeature>
+                                    <sams:shape>
+                                        <gml:Point gml:id="point-1-101000" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                                            <gml:name>Espoo Kivenlahti</gml:name>
+                                            <gml:pos>60.17771 24.64009 44</gml:pos>
+                                        </gml:Point>
+                                    </sams:shape>
+                                </sams:SF_SpatialSamplingFeature>
+                            </sam:relatedSamplingFeature>
+                        </sam:SamplingFeatureComplex>
+                    </sam:relatedSamplingFeature>
+                    <sams:shape>
+                        <gml:Curve gml:id="shape-1-fmisid-101000-mast-geom" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                            <gml:segments>
+                                <gml:LineStringSegment >
+                                    <gml:posList>60.17771 24.64009 44 60.17771 24.64009 341</gml:posList>
+                                </gml:LineStringSegment>
+                            </gml:segments>
+                        </gml:Curve>
+                    </sams:shape>
+                </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>
+            <om:result>
+                <gmlcov:MultiPointCoverage gml:id="mpcv1-1">
+                    <gml:domainSet>
+                        <gmlcov:SimpleMultiPoint gml:id="mp1-1" srsName="http://xml.fmi.fi/gml/crs/mastSRS.php?id=fmisid-101000" srsDimension="1">
+                            <gmlcov:positions>
+                                2.0 26.0 49.0 92.0 141.0 217.0 265.0 297.0 
+                            </gmlcov:positions>
+                        </gmlcov:SimpleMultiPoint>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:DataBlock>
+                            <gml:rangeParameters/>
+                            <gml:doubleOrNilReasonTupleList>
+                                12.7 11.5 11.7 10.2 10.5 9.7 8.4 7.3 
+                            </gml:doubleOrNilReasonTupleList>
+                        </gml:DataBlock>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord>
+                        <swe:field name="TA"  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=TA&amp;language=eng"/>
+                        
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                </gmlcov:MultiPointCoverage>
+            </om:result>
+        </omso:ProfileObservation>
+    </wfs:member>
+    <wfs:member>
+        <omso:ProfileObservation gml:id="WFS-SYz.E_4KkaaO9wejGjBN2XAkbxSJTowtIWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6dbcPPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNVrFlUYOHTNg6YMLTGx8udaUWhTjum7RkzZ2XdkqaduWuhkwYtlrBqtYsqjBw6ZsHTBhaZ2bbp56cnOsxiwYsGDBrbcPiJp59MO7HlpWroQGltw.IvDfj0c5wY5m9ty9Mu.hh5YduXpl5c6xKUhrbdPPnp3Z6mXx0rGnYZza3dds_NT6Yemnfu51hMWpw5b8nXHl5Sck9zW49cOzT08yd2bfE1ufTD00791Tzwy1kTYNOo3OfTfyy5OPXLy839OSukLNt0unW_Fzy8u2Hpp37ubp13y4emjLydOtuHn0dOtvXZ008N.nd0x7.2Xlhz5Wh007ctPpl4VhMQA-">
+            <om:phenomenonTime>
+                <gml:TimeInstant gml:id="time1-2">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time2-2">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/mast"/>
+            <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:value>atmosphere</om:value>
+                </om:NamedValue>
+            </om:parameter>
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=RH&amp;language=eng"/>
+            <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="ssf-2-fmisid-101000">
+                    <sam:sampledFeature />
+                    <sam:relatedSamplingFeature>
+                        <sam:SamplingFeatureComplex>
+                            <sam:role xlink:title="Related groud observation station" xlink:href="http://xml.fmi.fi/namespace/relation/groud-observation-station"/>
+                            <sam:relatedSamplingFeature>
+                                <sams:SF_SpatialSamplingFeature gml:id="obs-station-2-fmisid-101000">
+                                    <gml:description>Meteorological observation station for Espoo mast observations</gml:description>
+                                    <sam:sampledFeature>
+                                        <target:Location gml:id="obsloc-2-fmisid-101000-pos">
+                                            <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101000</gml:identifier>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Espoo Kivenlahti</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">-16000092</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2838</gml:name>
+                                            <target:representativePoint xlink:href="#point-101000"/>
+                                            <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Espoo</target:region>
+                                        </target:Location>
+                                    </sam:sampledFeature>
+                                    <sams:shape>
+                                        <gml:Point gml:id="point-2-101000" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                                            <gml:name>Espoo Kivenlahti</gml:name>
+                                            <gml:pos>60.17771 24.64009 44</gml:pos>
+                                        </gml:Point>
+                                    </sams:shape>
+                                </sams:SF_SpatialSamplingFeature>
+                            </sam:relatedSamplingFeature>
+                        </sam:SamplingFeatureComplex>
+                    </sam:relatedSamplingFeature>
+                    <sams:shape>
+                        <gml:Curve gml:id="shape-2-fmisid-101000-mast-geom" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                            <gml:segments>
+                                <gml:LineStringSegment >
+                                    <gml:posList>60.17771 24.64009 44 60.17771 24.64009 341</gml:posList>
+                                </gml:LineStringSegment>
+                            </gml:segments>
+                        </gml:Curve>
+                    </sams:shape>
+                </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>
+            <om:result>
+                <gmlcov:MultiPointCoverage gml:id="mpcv1-2">
+                    <gml:domainSet>
+                        <gmlcov:SimpleMultiPoint gml:id="mp1-2" srsName="http://xml.fmi.fi/gml/crs/mastSRS.php?id=fmisid-101000" srsDimension="1">
+                            <gmlcov:positions>
+                                2.0 26.0 49.0 92.0 141.0 217.0 265.0 297.0 
+                            </gmlcov:positions>
+                        </gmlcov:SimpleMultiPoint>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:DataBlock>
+                            <gml:rangeParameters/>
+                            <gml:doubleOrNilReasonTupleList>
+                                44.0 47.0 45.0 50.0 47.0 48.0 54.0 57.0 
+                            </gml:doubleOrNilReasonTupleList>
+                        </gml:DataBlock>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord>
+                        <swe:field name="RH"  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=RH&amp;language=eng"/>
+                        
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                </gmlcov:MultiPointCoverage>
+            </om:result>
+        </omso:ProfileObservation>
+    </wfs:member>
+    <wfs:member>
+        <omso:ProfileObservation gml:id="WFS-u9_yVXRZoBRVc8vLQPpbCtxy3fSJTowtIWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6dbcPPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNVrFlUYOHTNg6YMLTGx8udaUWhTjum7RkzZ2XdkqaduWuhkwYtlrBqtYsqjBw6ZsHTBhaZ2bbp56cnOsxiwYsGDBrbcPiJp59MO7HlpWroQGltw.IvDfj0c5wY5m9ty9Mu.hh5YduXpl5c6xKkRrbdPPnp3Z6mXx0rGnYZza3dds_NT6Yemnfu51hMWpw5b8nXHl5Sck9zW49cOzT08yd2bfE1ufTD00791Tzwy1kTYNOo3OfTfyy5OPXLy839OSukLNt0unW_Fzy8u2Hpp37ubp13y4emjLydOtuHn0dOtvXZ008N.nd0x7.2Xlhz5Wh007ctPpl4VhMQA-">
+            <om:phenomenonTime>
+                <gml:TimeInstant gml:id="time1-3">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time2-3">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/mast"/>
+            <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:value>atmosphere</om:value>
+                </om:NamedValue>
+            </om:parameter>
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=TD&amp;language=eng"/>
+            <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="ssf-3-fmisid-101000">
+                    <sam:sampledFeature />
+                    <sam:relatedSamplingFeature>
+                        <sam:SamplingFeatureComplex>
+                            <sam:role xlink:title="Related groud observation station" xlink:href="http://xml.fmi.fi/namespace/relation/groud-observation-station"/>
+                            <sam:relatedSamplingFeature>
+                                <sams:SF_SpatialSamplingFeature gml:id="obs-station-3-fmisid-101000">
+                                    <gml:description>Meteorological observation station for Espoo mast observations</gml:description>
+                                    <sam:sampledFeature>
+                                        <target:Location gml:id="obsloc-3-fmisid-101000-pos">
+                                            <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101000</gml:identifier>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Espoo Kivenlahti</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">-16000092</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2838</gml:name>
+                                            <target:representativePoint xlink:href="#point-101000"/>
+                                            <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Espoo</target:region>
+                                        </target:Location>
+                                    </sam:sampledFeature>
+                                    <sams:shape>
+                                        <gml:Point gml:id="point-3-101000" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                                            <gml:name>Espoo Kivenlahti</gml:name>
+                                            <gml:pos>60.17771 24.64009 44</gml:pos>
+                                        </gml:Point>
+                                    </sams:shape>
+                                </sams:SF_SpatialSamplingFeature>
+                            </sam:relatedSamplingFeature>
+                        </sam:SamplingFeatureComplex>
+                    </sam:relatedSamplingFeature>
+                    <sams:shape>
+                        <gml:Curve gml:id="shape-3-fmisid-101000-mast-geom" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                            <gml:segments>
+                                <gml:LineStringSegment >
+                                    <gml:posList>60.17771 24.64009 44 60.17771 24.64009 341</gml:posList>
+                                </gml:LineStringSegment>
+                            </gml:segments>
+                        </gml:Curve>
+                    </sams:shape>
+                </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>
+            <om:result>
+                <gmlcov:MultiPointCoverage gml:id="mpcv1-3">
+                    <gml:domainSet>
+                        <gmlcov:SimpleMultiPoint gml:id="mp1-3" srsName="http://xml.fmi.fi/gml/crs/mastSRS.php?id=fmisid-101000" srsDimension="1">
+                            <gmlcov:positions>
+                                2.0 26.0 49.0 92.0 141.0 217.0 265.0 297.0 
+                            </gmlcov:positions>
+                        </gmlcov:SimpleMultiPoint>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:DataBlock>
+                            <gml:rangeParameters/>
+                            <gml:doubleOrNilReasonTupleList>
+                                0.6 0.5 0.2 0.1 -0.4 -0.8 -0.4 -0.8 
+                            </gml:doubleOrNilReasonTupleList>
+                        </gml:DataBlock>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord>
+                        <swe:field name="TD"  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=TD&amp;language=eng"/>
+                        
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                </gmlcov:MultiPointCoverage>
+            </om:result>
+        </omso:ProfileObservation>
+    </wfs:member>
+    <wfs:member>
+        <omso:ProfileObservation gml:id="WFS-6v3pJGoM3UIsXPSgg0C7cmMBS02JTowtIWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6dbcPPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNVrFlUYOHTNg6YMLTGx8udaUWhTjum7RkzZ2XdkqaduWuhkwYtlrBqtYsqjBw6ZsHTBhaZ2bbp56cnOsxiwYsGDBrbcPiJp59MO7HlpWroQGltw.IvDfj0c5wY5m9ty9Mu.hh5YduXpl5c6xK9NrbdPPnp3Z6mXx0rGnYZza3dds_NT6Yemnfu51hMWpw5b8nXHl5Sck9zW49cOzT08yd2bfE1ufTD00791Tzwy1kTYNOo3OfTfyy5OPXLy839OSukLNt0unW_Fzy8u2Hpp37ubp13y4emjLydOtuHn0dOtvXZ008N.nd0x7.2Xlhz5Wh007ctPpl4VhMQA-">
+            <om:phenomenonTime>
+                <gml:TimeInstant gml:id="time1-4">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time2-4">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/mast"/>
+            <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:value>atmosphere</om:value>
+                </om:NamedValue>
+            </om:parameter>
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WS&amp;language=eng"/>
+            <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="ssf-4-fmisid-101000">
+                    <sam:sampledFeature />
+                    <sam:relatedSamplingFeature>
+                        <sam:SamplingFeatureComplex>
+                            <sam:role xlink:title="Related groud observation station" xlink:href="http://xml.fmi.fi/namespace/relation/groud-observation-station"/>
+                            <sam:relatedSamplingFeature>
+                                <sams:SF_SpatialSamplingFeature gml:id="obs-station-4-fmisid-101000">
+                                    <gml:description>Meteorological observation station for Espoo mast observations</gml:description>
+                                    <sam:sampledFeature>
+                                        <target:Location gml:id="obsloc-4-fmisid-101000-pos">
+                                            <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101000</gml:identifier>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Espoo Kivenlahti</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">-16000092</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2838</gml:name>
+                                            <target:representativePoint xlink:href="#point-101000"/>
+                                            <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Espoo</target:region>
+                                        </target:Location>
+                                    </sam:sampledFeature>
+                                    <sams:shape>
+                                        <gml:Point gml:id="point-4-101000" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                                            <gml:name>Espoo Kivenlahti</gml:name>
+                                            <gml:pos>60.17771 24.64009 44</gml:pos>
+                                        </gml:Point>
+                                    </sams:shape>
+                                </sams:SF_SpatialSamplingFeature>
+                            </sam:relatedSamplingFeature>
+                        </sam:SamplingFeatureComplex>
+                    </sam:relatedSamplingFeature>
+                    <sams:shape>
+                        <gml:Curve gml:id="shape-4-fmisid-101000-mast-geom" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                            <gml:segments>
+                                <gml:LineStringSegment >
+                                    <gml:posList>60.17771 24.64009 44 60.17771 24.64009 371</gml:posList>
+                                </gml:LineStringSegment>
+                            </gml:segments>
+                        </gml:Curve>
+                    </sams:shape>
+                </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>
+            <om:result>
+                <gmlcov:MultiPointCoverage gml:id="mpcv1-4">
+                    <gml:domainSet>
+                        <gmlcov:SimpleMultiPoint gml:id="mp1-4" srsName="http://xml.fmi.fi/gml/crs/mastSRS.php?id=fmisid-101000" srsDimension="1">
+                            <gmlcov:positions>
+                                26.0 92.0 217.0 327.0 
+                            </gmlcov:positions>
+                        </gmlcov:SimpleMultiPoint>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:DataBlock>
+                            <gml:rangeParameters/>
+                            <gml:doubleOrNilReasonTupleList>
+                                3.7 4.6 4.9 3.8 
+                            </gml:doubleOrNilReasonTupleList>
+                        </gml:DataBlock>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord>
+                        <swe:field name="WS"  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WS&amp;language=eng"/>
+                        
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                </gmlcov:MultiPointCoverage>
+            </om:result>
+        </omso:ProfileObservation>
+    </wfs:member>
+    <wfs:member>
+        <omso:ProfileObservation gml:id="WFS-17vQVSFxXEHhfJAVy.ZRHKmnVTCJTowtIWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6dbcPPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNVrFlUYOHTNg6YMLTGx8udaUWhTjum7RkzZ2XdkqaduWuhkwYtlrBqtYsqjBw6ZsHTBhaZ2bbp56cnOsxiwYsGDBrbcPiJp59MO7HlpWroQGltw.IvDfj0c5wY5m9ty9Mu.hh5YduXpl5c6xK8RrbdPPnp3Z6mXx0rGnYZza3dds_NT6Yemnfu51hMWpw5b8nXHl5Sck9zW49cOzT08yd2bfE1ufTD00791Tzwy1kTYNOo3OfTfyy5OPXLy839OSukLNt0unW_Fzy8u2Hpp37ubp13y4emjLydOtuHn0dOtvXZ008N.nd0x7.2Xlhz5Wh007ctPpl4VhMQA-">
+            <om:phenomenonTime>
+                <gml:TimeInstant gml:id="time1-5">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time2-5">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/mast"/>
+            <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:value>atmosphere</om:value>
+                </om:NamedValue>
+            </om:parameter>
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WD&amp;language=eng"/>
+            <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="ssf-5-fmisid-101000">
+                    <sam:sampledFeature />
+                    <sam:relatedSamplingFeature>
+                        <sam:SamplingFeatureComplex>
+                            <sam:role xlink:title="Related groud observation station" xlink:href="http://xml.fmi.fi/namespace/relation/groud-observation-station"/>
+                            <sam:relatedSamplingFeature>
+                                <sams:SF_SpatialSamplingFeature gml:id="obs-station-5-fmisid-101000">
+                                    <gml:description>Meteorological observation station for Espoo mast observations</gml:description>
+                                    <sam:sampledFeature>
+                                        <target:Location gml:id="obsloc-5-fmisid-101000-pos">
+                                            <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101000</gml:identifier>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Espoo Kivenlahti</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">-16000092</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2838</gml:name>
+                                            <target:representativePoint xlink:href="#point-101000"/>
+                                            <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Espoo</target:region>
+                                        </target:Location>
+                                    </sam:sampledFeature>
+                                    <sams:shape>
+                                        <gml:Point gml:id="point-5-101000" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                                            <gml:name>Espoo Kivenlahti</gml:name>
+                                            <gml:pos>60.17771 24.64009 44</gml:pos>
+                                        </gml:Point>
+                                    </sams:shape>
+                                </sams:SF_SpatialSamplingFeature>
+                            </sam:relatedSamplingFeature>
+                        </sam:SamplingFeatureComplex>
+                    </sam:relatedSamplingFeature>
+                    <sams:shape>
+                        <gml:Curve gml:id="shape-5-fmisid-101000-mast-geom" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                            <gml:segments>
+                                <gml:LineStringSegment >
+                                    <gml:posList>60.17771 24.64009 44 60.17771 24.64009 371</gml:posList>
+                                </gml:LineStringSegment>
+                            </gml:segments>
+                        </gml:Curve>
+                    </sams:shape>
+                </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>
+            <om:result>
+                <gmlcov:MultiPointCoverage gml:id="mpcv1-5">
+                    <gml:domainSet>
+                        <gmlcov:SimpleMultiPoint gml:id="mp1-5" srsName="http://xml.fmi.fi/gml/crs/mastSRS.php?id=fmisid-101000" srsDimension="1">
+                            <gmlcov:positions>
+                                26.0 92.0 217.0 327.0 
+                            </gmlcov:positions>
+                        </gmlcov:SimpleMultiPoint>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:DataBlock>
+                            <gml:rangeParameters/>
+                            <gml:doubleOrNilReasonTupleList>
+                                144.0 153.0 146.0 144.0 
+                            </gml:doubleOrNilReasonTupleList>
+                        </gml:DataBlock>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord>
+                        <swe:field name="WD"  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WD&amp;language=eng"/>
+                        
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                </gmlcov:MultiPointCoverage>
+            </om:result>
+        </omso:ProfileObservation>
+    </wfs:member>
+    <wfs:member>
+        <omso:ProfileObservation gml:id="WFS-UZxMFjw4vKh7S76mNAJJo1gX.Q2JTowtIWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6dbcPPo6dbeuzpp4b9O7pj39svLDnywtLFlz6d1TTty10MmDFstYNVrFlUYOHTNg6YMLTGx8udaUWhTjum7RkzZ2XdkqaduWuhkwYtlrBqtYsqjBw6ZsHTBhaZ2bbp56cnOsxiwYsGDBrbcPiJp59MO7HlpWroQGltw.IvDfj0c5wY5m9ty9Mu.hh5YduXpl5c6xK8drbdPPnp3Z6mXx0rGnYZza3dds_NT6Yemnfu51hMWpw5b8nXHl5Sck9zW49cOzT08yd2bfE1ufTD00791Tzwy1kTYNOo3OfTfyy5OPXLy839OSukLNt0unW_Fzy8u2Hpp37ubp13y4emjLydOtuHn0dOtvXZ008N.nd0x7.2Xlhz5Wh007ctPpl4VhMQA-">
+            <om:phenomenonTime>
+                <gml:TimeInstant gml:id="time1-6">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time2-6">
+                    <gml:timePosition>2016-05-12T08:30:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+            <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/mast"/>
+            <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:value>atmosphere</om:value>
+                </om:NamedValue>
+            </om:parameter>
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WG&amp;language=eng"/>
+            <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="ssf-6-fmisid-101000">
+                    <sam:sampledFeature />
+                    <sam:relatedSamplingFeature>
+                        <sam:SamplingFeatureComplex>
+                            <sam:role xlink:title="Related groud observation station" xlink:href="http://xml.fmi.fi/namespace/relation/groud-observation-station"/>
+                            <sam:relatedSamplingFeature>
+                                <sams:SF_SpatialSamplingFeature gml:id="obs-station-6-fmisid-101000">
+                                    <gml:description>Meteorological observation station for Espoo mast observations</gml:description>
+                                    <sam:sampledFeature>
+                                        <target:Location gml:id="obsloc-6-fmisid-101000-pos">
+                                            <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101000</gml:identifier>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Espoo Kivenlahti</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">-16000092</gml:name>
+                                            <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2838</gml:name>
+                                            <target:representativePoint xlink:href="#point-101000"/>
+                                            <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Espoo</target:region>
+                                        </target:Location>
+                                    </sam:sampledFeature>
+                                    <sams:shape>
+                                        <gml:Point gml:id="point-6-101000" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                                            <gml:name>Espoo Kivenlahti</gml:name>
+                                            <gml:pos>60.17771 24.64009 44</gml:pos>
+                                        </gml:Point>
+                                    </sams:shape>
+                                </sams:SF_SpatialSamplingFeature>
+                            </sam:relatedSamplingFeature>
+                        </sam:SamplingFeatureComplex>
+                    </sam:relatedSamplingFeature>
+                    <sams:shape>
+                        <gml:Curve gml:id="shape-6-fmisid-101000-mast-geom" axisLabels="Lat Long Height" srsName="http://www.opengis.net/def/crs/EPSG/0/7423" srsDimension="3">
+                            <gml:segments>
+                                <gml:LineStringSegment >
+                                    <gml:posList>60.17771 24.64009 44 60.17771 24.64009 371</gml:posList>
+                                </gml:LineStringSegment>
+                            </gml:segments>
+                        </gml:Curve>
+                    </sams:shape>
+                </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>
+            <om:result>
+                <gmlcov:MultiPointCoverage gml:id="mpcv1-6">
+                    <gml:domainSet>
+                        <gmlcov:SimpleMultiPoint gml:id="mp1-6" srsName="http://xml.fmi.fi/gml/crs/mastSRS.php?id=fmisid-101000" srsDimension="1">
+                            <gmlcov:positions>
+                                26.0 92.0 217.0 327.0 
+                            </gmlcov:positions>
+                        </gmlcov:SimpleMultiPoint>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:DataBlock>
+                            <gml:rangeParameters/>
+                            <gml:doubleOrNilReasonTupleList>
+                                6.5 6.7 6.8 6.1 
+                            </gml:doubleOrNilReasonTupleList>
+                        </gml:DataBlock>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord>
+                        <swe:field name="WG"  xlink:href="http://data.fmi.fi/fmi-apikey/<insert-apikey-here>/meta?observableProperty=observation&amp;param=WG&amp;language=eng"/>
+                        
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                </gmlcov:MultiPointCoverage>
+            </om:result>
+        </omso:ProfileObservation>
+    </wfs:member>
+    
+</wfs:FeatureCollection>
