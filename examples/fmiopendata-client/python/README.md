@@ -3,8 +3,8 @@ FMI OpenData Client
 
 Example implementation for python to interact with FMI Open Data WFS.
 
-Helper script to handle FMI Open Data WFS
-
+Usage:
+```
 positional arguments:
   what                  What to do (stored_queries | data | parameters |
                         coverages)
@@ -29,4 +29,4 @@ Examples:
 ./fmiopendata --stored_query=fmi::observations::weather::multipointcoverage --bbox=19,59,25,65 --start=2015-01-01T00:00:00Z --end=2015-01-01T01:00:00Z data
 ./fmiopendata --stored_query=fmi::observations::weather::multipointcoverage --bbox=19,59,25,65 --start=2015-01-01T00:00:00Z --end=2015-01-01T01:00:00Z parameters
 ./fmiopendata --verbose=1 --stored_query=fmi::forecast::hirlam::surface::grid --file_prefix=hirlam --dir=gribs --file_format=grb2 coverages
-
+```
