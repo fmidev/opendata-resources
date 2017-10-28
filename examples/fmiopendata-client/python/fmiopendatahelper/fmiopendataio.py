@@ -1,6 +1,5 @@
-import os,sys,string,argparse,requests,re,datetime
-import xml.etree.ElementTree as ET
-from pprint import pprint
+# coding: utf-8
+import requests
 from os import listdir
 from os.path import isfile, join
 
