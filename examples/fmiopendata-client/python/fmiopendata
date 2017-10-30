@@ -1,13 +1,12 @@
-#!/usr/local/bin/python
-# Tool for retrieving data via FMI open data API
-#
-import os,sys,string,argparse,requests,re,datetime
-import xml.etree.ElementTree as ET
+#!/usr/bin/env python
+# coding: utf-8
+"""Tool for retrieving data via FMI open data API"""
+
+import os
+import sys
+import argparse
 import fmiopendatahelper.fmiopendata as fmiopendata
 import fmiopendatahelper.fmiopendataio as fmiio
-from pprint import pprint
-from os import listdir
-from os.path import isfile, join
 
 def main(argv):
     description = "Helper script to handle FMI Open Data WFS"

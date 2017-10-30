@@ -1,8 +1,7 @@
-import os,sys,string,argparse,requests,re,datetime
+# coding: utf-8
+import requests
+import datetime
 import xml.etree.ElementTree as ET
-from pprint import pprint
-from os import listdir
-from os.path import isfile, join
 
 
 class FMIOpenData:
@@ -194,7 +193,6 @@ class FMIOpenData:
         """ Get data """
 
         req = self.do_req(apikey, stored_query, bbox, firstdate, lastdate)
-        data = {}
     
         if req.status_code == 200:
             xmlstring = req.content
@@ -212,7 +210,6 @@ class FMIOpenData:
             print "Fetching stored queries from ",url
         req = requests.get(url)
 
-        data = []
         if req.status_code == 200:
             xmlstring=req.content
             tree = ET.ElementTree(ET.fromstring(xmlstring))
