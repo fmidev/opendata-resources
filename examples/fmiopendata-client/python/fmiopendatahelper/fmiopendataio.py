@@ -11,9 +11,9 @@ class FMIOpenDataIO:
     def set_verbose(self, verbose=True):
         self.verbose = verbose
 
-    def do_req(self, apikey, stored_query, bbox, firstdate, lastdate):
+    def do_req(self, stored_query, bbox, firstdate, lastdate):
         """ Do data request """
-        url = 'http://data.fmi.fi/fmi-apikey/' + apikey + '/wfs?request=getFeature&storedquery_id='+stored_query
+        url = 'http://opendata.fmi.fi/wfs?request=getFeature&storedquery_id='+stored_query
         try:
             url += '&bbox='+bbox
         except:

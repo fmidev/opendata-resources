@@ -52,12 +52,6 @@ Examples:
         proxy_host = None
         proxy_port = None
 
-    try:
-        apikey = os.environ['fmi_apikey']
-    except:
-        print "Put following environment variables to your environment:"
-        print "  export fmi_apikey=xxx"
-        sys.exit(2)
 
     verbose = False
     if args.verbose is not None:
@@ -70,25 +64,25 @@ Examples:
     # Execute
     if args.what[0] == 'stored_queries':
         try:
-            fmiod.get_storedqueries(apikey, args.format)
+            fmiod.get_storedqueries(args.format)
         except (UnboundLocalError):
             sys.exit(2)
     elif args.what[0] == 'data':
         try:
-            fmiod.print_positions(*fmiod.get_data(apikey, args.stored_query, args.bbox, args.starttime, args.endtime))
+            fmiod.print_positions(*fmiod.get_data(args.stored_query, args.bbox, args.starttime, args.endtime))
         except UnboundLocalError as e:
             print e
             sys.exit(2)
     elif args.what[0] == 'parameters':
         try:
-            data, params = fmiod.get_data(apikey, args.stored_query, args.bbox, args.starttime, args.endtime)
+            data, params = fmiod.get_data(args.stored_query, args.bbox, args.starttime, args.endtime)
             fmiod.print_parameters(params)
         except UnboundLocalError as e:
             print e
             sys.exit(2)
     elif args.what[0] == 'coverages':
         try:
-            files = fmiod.get_files(apikey, args.stored_query, args.bbox, args.starttime, args.endtime, args.file_prefix, args.file_format)
+            files = fmiod.get_files(args.stored_query, args.bbox, args.starttime, args.endtime, args.file_prefix, args.file_format)
 
             if verbose or args.dir is None:
                 io.print_files(files)
