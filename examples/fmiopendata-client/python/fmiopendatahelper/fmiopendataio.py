@@ -1,6 +1,6 @@
 # coding: utf-8
 import requests
-from os import listdir
+from os import listdir, mkdir
 from os.path import isfile, join
 
 
@@ -43,7 +43,12 @@ class FMIOpenDataIO:
     def fill_dir(self, files, dir):
         """ Mirror files got from WFS response and in given directory """
         
-        existing_files = [f for f in listdir(dir) if isfile(join(dir, f))]
+        print "dir " + dir
+        existing_files = []
+        try:
+            existing_files = [f for f in listdir(dir) if isfile(join(dir, f))]
+        except:
+            mkdir(dir)
         available_files = files.keys()
 
         to_download = list(set(available_files) - set(existing_files))
