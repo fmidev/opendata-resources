@@ -30,9 +30,9 @@ class FMIOpenData:
         self.params = params
         return params
 
-    def do_req(self, apikey, stored_query, bbox, firstdate, lastdate):
+    def do_req(self, stored_query, bbox, firstdate, lastdate):
         """ Do data request """
-        url = 'http://data.fmi.fi/fmi-apikey/' + apikey + '/wfs?request=getFeature&storedquery_id='+stored_query
+        url = 'http://opendata.fmi.fi/wfs?request=getFeature&storedquery_id='+stored_query
         try:
             url += '&bbox='+bbox
         except:
@@ -83,10 +83,10 @@ class FMIOpenData:
 
         return time
             
-    def get_files(self, apikey, stored_query, bbox, firstdate, lastdate, file_prefix, file_format):
+    def get_files(self, stored_query, bbox, firstdate, lastdate, file_prefix, file_format):
         """ Get downloadable coverages """
 
-        req = self.do_req(apikey, stored_query, bbox, firstdate, lastdate)
+        req = self.do_req(stored_query, bbox, firstdate, lastdate)
         if req.status_code == 200:
             xmlstring = req.content
             tree = ET.ElementTree(ET.fromstring(xmlstring))
@@ -189,10 +189,10 @@ class FMIOpenData:
                     if p != 'time' and value != 'NaN':
                         print '  '+params[p],value
 
-    def get_data(self, apikey,stored_query,bbox,firstdate,lastdate):
+    def get_data(self, stored_query,bbox,firstdate,lastdate):
         """ Get data """
 
-        req = self.do_req(apikey, stored_query, bbox, firstdate, lastdate)
+        req = self.do_req(stored_query, bbox, firstdate, lastdate)
     
         if req.status_code == 200:
             xmlstring = req.content
@@ -201,10 +201,10 @@ class FMIOpenData:
             
         return positions, params
 
-    def get_storedqueries(self, apikey, format=''):
+    def get_storedqueries(self, format=''):
         """ Print stored queries """
         
-        url='http://data.fmi.fi/fmi-apikey/' + apikey + '/wfs?request=listStoredQueries'
+        url='http://opendata.fmi.fi/wfs?request=listStoredQueries'
 
         if self.verbose:
             print "Fetching stored queries from ",url

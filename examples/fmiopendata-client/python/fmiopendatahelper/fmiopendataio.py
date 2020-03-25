@@ -1,6 +1,6 @@
 # coding: utf-8
 import requests
-from os import listdir
+from os import listdir, mkdir
 from os.path import isfile, join
 
 
@@ -11,9 +11,9 @@ class FMIOpenDataIO:
     def set_verbose(self, verbose=True):
         self.verbose = verbose
 
-    def do_req(self, apikey, stored_query, bbox, firstdate, lastdate):
+    def do_req(self, stored_query, bbox, firstdate, lastdate):
         """ Do data request """
-        url = 'http://data.fmi.fi/fmi-apikey/' + apikey + '/wfs?request=getFeature&storedquery_id='+stored_query
+        url = 'http://opendata.fmi.fi/wfs?request=getFeature&storedquery_id='+stored_query
         try:
             url += '&bbox='+bbox
         except:
@@ -43,7 +43,12 @@ class FMIOpenDataIO:
     def fill_dir(self, files, dir):
         """ Mirror files got from WFS response and in given directory """
         
-        existing_files = [f for f in listdir(dir) if isfile(join(dir, f))]
+        print "dir " + dir
+        existing_files = []
+        try:
+            existing_files = [f for f in listdir(dir) if isfile(join(dir, f))]
+        except:
+            mkdir(dir)
         available_files = files.keys()
 
         to_download = list(set(available_files) - set(existing_files))
