@@ -11,28 +11,32 @@ BUCKET=fmi-opendata-radar-geotiff
 SITES=${SITES:-'fivan'}
 
 # DBZH,VRAD,HCLASS
-QUANTITIES=${QUANTITY:-'DBZH,VRAD'}
+QUANTITIES=${QUANTITIES:-'DBZH'}
 
 STEP=${STEP:-'5'} # minutes  
 
 SECONDS_NOW=`date +%s`
-SECONDS_NOW=$(( SECONDS_NOW - SECONDS_NOW%300 - 5*60 ))
+SECONDS_NOW=$(( SECONDS_NOW - SECONDS_NOW%900 - 5*60 ))
 
+
+# Online help
 if [ $# == 0 ]; then
     FORMAT='%Y/%m/%d %H:%M'
     echo "Usage:"
     echo "  $0 now"
     echo "  $0 TIMESTAMP  TIMESTAMP_END"
-    echo "  where  timestamps have 'date' syntax, eg 'YYYY/mm/dd HH:MM --utc' ; "
-    echo "  (Timestamps may include spaces replaced with underscores.) "
-    TIMESTAMP_END=`date +"$FORMAT" --utc`
-    SECONDS=`date +%s --date "$TIMESTAMP_END +00:45"`
-    SECONDS=$(( SECONDS - SECONDS%300 - 5*60 ))
+    echo "  Timestamps are in UTC and 'date' syntax, eg '$FORMAT'."
+    echo "  Timestamps may include spaces replaced with underscores."
+    TIMESTAMP_END=`date +"$FORMAT" --date @$SECONDS_NOW --utc`
+    SECONDS=$(( SECONDS_NOW - 15*60 ))
     TIMESTAMP=`date +"$FORMAT" --date @$SECONDS --utc` # --date='$TIMESTAMP_END'
-    echo "  Site codes: fianj fiika fikes fikor fikuo filuo finur fipet fiuta fivan fivim"
-    echo "Example:"
+    echo "  FMI site codes: fianj fiika fikes fikor fikuo filuo finur fipet fiuta fivan fivim"
+    echo "  Available quantities: DBZH VRAD HCLASS"
+    echo
+    echo "Examples:"
     echo "  $0 '${TIMESTAMP}' '${TIMESTAMP_END}'"
-    echo "  SITES=fivan,fikor STEP=15 $0 '2020/08/21 12:00' '2020/08/21 12:30'"
+    echo "  SITES=fivan,fikor STEP=15 $0 '${TIMESTAMP}' '${TIMESTAMP_END}'"
+    echo "  SITES=fikor,fiika QUANTITIES=DBZH,VRAD $0 $TIMESTAMP"
     exit 1
 fi
 
@@ -86,7 +90,7 @@ while (( s <=  SECONDS_END )); do
 
     for SITE in ${SITES//,/ } ; do
         for QUANTITY in ${QUANTITIES//,/ } ; do
-	    echo wget --no-clobber $BASEURL/$BUCKET/$TIMESTAMP_DIR/${SITE}/${TIMESTAMP}_${SITE}_${QUANTITY}.tif;
+	    wget --no-clobber $BASEURL/$BUCKET/$TIMESTAMP_DIR/${SITE}/${TIMESTAMP}_${SITE}_${QUANTITY}.tif
 	done
     done
 
