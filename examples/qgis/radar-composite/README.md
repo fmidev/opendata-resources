@@ -11,10 +11,7 @@ QGIS is an open source software for viewing and processing geographical data.
 
 This example uses GeoTIFF data linked below
 * GeoTIFF
-* For comparison:
-** [HDF5 data](./composite.h5)
-** [PNG image, grayscale](./composite.png)
-** [PNG image, coloured](./composite-rgb.png)
+* For comparison: [HDF5 data](./composite.h5), [PNG image, grayscale](./composite.png), and [PNG image, coloured](./composite-rgb.png).
 
 ## Example
 
