@@ -24,7 +24,7 @@ This example uses GeoTIFF data linked below
 ### Radar data
 
 * Download radar data using instructions on page
-  or use ![GeoTIFF data linked](radar-composite.tif) in this documentation 
+  or use [GeoTIFF data linked](./radar-composite.tif) in this documentation 
 * Add the data as a separate layer above the background map(s).
   ![Raw (grayscale) radar image composite](./qgis-radar-gray.png)
 
