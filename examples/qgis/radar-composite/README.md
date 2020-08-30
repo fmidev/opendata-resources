@@ -7,7 +7,7 @@ QGIS is an open source multi-platform software for viewing and processing geogra
 * [Home page](https://qgis.org/)
 * [Download](https://qgis.org/en/site/forusers/download.html)
 
-## Sample data (2020/xx/yy 12:00 UTC):
+## Sample data (2020/07/24 12:00 UTC):
 
 This example uses GeoTIFF data linked below
 * GeoTIFF
