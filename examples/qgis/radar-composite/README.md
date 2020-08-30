@@ -18,8 +18,7 @@ This example uses GeoTIFF data linked below
 
 ### Background map
 
-* Add a background map service in the list of WMS'es, for example:
-  [remark]: https://tiles.kartat.kapsi.fi/taustakartta?
+* Add a background map service in the list of WMS'es, for example ...
 * Add a group in the layer list below, renaming it to, say, "Background maps"
 
 ### Radar data
