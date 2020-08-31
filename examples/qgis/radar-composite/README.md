@@ -7,18 +7,17 @@ QGIS is an open source multi-platform software for viewing and processing geogra
 * [Home page](https://qgis.org/)
 * [Download](https://qgis.org/en/site/forusers/download.html)
 
-## Sample data (2020/07/24 12:00 UTC):
+## Sample data
 
-This example uses GeoTIFF data linked below
-* GeoTIFF
+This example uses data of all the FMI radars on 2020/07/24 12:00 UTC.
+* Applied GeoTIFF file: [radar-composite.tif](./radar-composite.tif)
 * For comparison: [HDF5 data](./composite.h5), [PNG image, grayscale](./composite.png), and [PNG image, coloured](./composite-rgb.png).
 
 ## Example
 
-
 ### Background map
 
-* Add a background map service in the list of WMS'es, for example ...
+* Add a background map service in the list of WMS'es, for example .
 * Add a group in the layer list below, renaming it to, say, "Background maps"
 
 ### Radar data
