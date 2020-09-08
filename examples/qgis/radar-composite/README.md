@@ -11,7 +11,7 @@ QGIS is an open source multi-platform software for viewing and processing geogra
 
 This example uses data of all the FMI radars on 2020/07/24 12:00 UTC.
 * Applied GeoTIFF file: [radar-composite.tif](./radar-composite.tif)
-* For comparison: [HDF5 data](./composite.h5), [PNG image, grayscale](./composite.png), and [PNG image, coloured](./composite-rgb.png).
+* For comparison: [HDF5 data](./radar-composite.h5) and [coloured PNG image](./composite-rgb.png).
 
 ## Example
 
@@ -32,7 +32,7 @@ This example uses data of all the FMI radars on 2020/07/24 12:00 UTC.
   yellow and intensive rain and/or hail with red. For that, 
   select Render type: Singleband pseudocolor and
   predefined color map template *Spectral* with *Invert* selected.
-  Set Min -10 and Max 55, and press Classify.
+  Set Min -10 and Max 55, and press *Classify*.
  * Complete color editing with *Apply* and *OK*.
   ![Adding color](./qgis-color.png)
   
