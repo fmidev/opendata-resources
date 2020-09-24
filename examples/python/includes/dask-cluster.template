@@ -1,0 +1,228 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  VpcId:
+    Type: 'AWS::EC2::VPC::Id'
+    Description: VpcId of your existing Virtual Private Cloud (VPC)
+    ConstraintDescription: must be the VPC Id of an existing Virtual Private Cloud
+  Subnets:
+    Type: 'List<AWS::EC2::Subnet::Id>'
+    Description: The list of SubnetIds in your Virtual Private Cloud (VPC)
+    ConstraintDescription: >-
+      must be a list of at least two existing subnets associated with at least
+      two different availability zones. They should be residing in the selected
+      Virtual Private Cloud.
+Resources:
+  logsGroupScheduler:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /ecs/dask-scheduler
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 527588db-c546-4f16-a30b-faa587c9f2bc
+  logsGroupWorkers:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /ecs/dask-workers
+
+  PrivateNameSpace:
+    Type: 'AWS::ServiceDiscovery::PrivateDnsNamespace'
+    Properties:
+      Vpc: !Ref VpcId
+      Name: local-dask
+
+  ECSExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ecs-tasks.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      Path: /
+      RoleName: ECSExecutionRole
+
+  RolePolicies:
+    Type: 'AWS::IAM::Policy'
+    Properties:
+      PolicyName: ECSExecutionRole
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Action:
+              - 'ecr:BatchCheckLayerAvailability'
+              - 'ecr:GetDownloadUrlForLayer'
+              - 'ecr:BatchGetImage'
+              - 'ecr:GetAuthorizationToken'
+              - 'logs:CreateLogStream'
+              - 'logs:PutLogEvents'
+            Effect: Allow
+            Resource: '*'
+      Roles:
+        - Ref: ECSExecutionRole
+
+  DaskCluster:
+    Type: 'AWS::ECS::Cluster'
+    Properties:
+      ClusterName: Fargate-Dask-Cluster
+
+  serviceRegistryScheduler:
+    Type: 'AWS::ServiceDiscovery::Service'
+    Properties:
+      Name: Dask-Scheduler
+      HealthCheckCustomConfig:
+        FailureThreshold: 10
+      DnsConfig:
+        DnsRecords:
+          - Type: A
+            TTL: '60'
+        NamespaceId: !Ref PrivateNameSpace
+  serviceRegistryWorker:
+    Type: 'AWS::ServiceDiscovery::Service'
+    Properties:
+      Name: Dask-Worker
+      HealthCheckCustomConfig:
+        FailureThreshold: 10
+      DnsConfig:
+        DnsRecords:
+          - Type: A
+            TTL: '60'
+        NamespaceId: !Ref PrivateNameSpace
+  taskdefinition:
+    Type: 'AWS::ECS::TaskDefinition'
+    DependsOn: serviceRegistryScheduler
+    Properties:
+      Family: !Join
+        - ''
+        - - cloudformation
+          - '-dask-scheduler'
+      Cpu: '1024'
+      Memory: '2048'
+      NetworkMode: awsvpc
+      TaskRoleArn: !Ref ECSExecutionRole
+      ExecutionRoleArn: !Ref ECSExecutionRole
+      RequiresCompatibilities:
+        - FARGATE
+      ContainerDefinitions:
+        - Name: dask-scheduler
+          Image: !Join
+            - .
+            - - !Ref 'AWS::AccountId'
+              - dkr.ecr
+              - !Ref 'AWS::Region'
+              - 'amazonaws.com/dask:latest'
+          Cpu: '1024'
+          Memory: '2048'
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: /ecs/dask-scheduler
+              awslogs-region: !Ref 'AWS::Region'
+              awslogs-stream-prefix: ecs
+          Essential: 'true'
+          Command:
+            - dask-scheduler
+
+  taskdefinitionWorker:
+    Type: 'AWS::ECS::TaskDefinition'
+    DependsOn: DaskSchedulerService
+    Properties:
+      Family: !Join
+        - ''
+        - - cloudformation
+          - '-dask-workers'
+      Cpu: '1024'
+      Memory: '2048'
+      NetworkMode: awsvpc
+      TaskRoleArn: !Ref ECSExecutionRole
+      ExecutionRoleArn: !Ref ECSExecutionRole
+      RequiresCompatibilities:
+        - FARGATE
+      ContainerDefinitions:
+        - Name: dask-workers
+          Image: !Join
+            - .
+            - - !Ref 'AWS::AccountId'
+              - dkr.ecr
+              - !Ref 'AWS::Region'
+              - 'amazonaws.com/dask:latest'
+          Cpu: '1024'
+          Memory: '2048'
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: /ecs/dask-workers
+              awslogs-region: !Ref 'AWS::Region'
+              awslogs-stream-prefix: ecs
+          Essential: 'true'
+          Command:
+            - dask-worker
+            - 'dask-scheduler.local-dask:8786'
+            - '--memory-limit 2800MB'
+            - '--worker-port 9000'
+            - '--nanny-port 9001'
+            - '--bokeh-port 9002'
+  DaskSchedulerService:
+    Type: 'AWS::ECS::Service'
+    DependsOn:
+      - serviceRegistryScheduler
+      - logsGroupScheduler
+    Properties:
+      Cluster: !Ref DaskCluster
+      DeploymentConfiguration:
+        MaximumPercent: 200
+        MinimumHealthyPercent: 100
+      DesiredCount: 1
+      LaunchType: FARGATE
+      ServiceName: Dask-Scheduler
+      ServiceRegistries:
+        - RegistryArn: !GetAtt serviceRegistryScheduler.Arn
+      TaskDefinition: !Ref taskdefinition
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
+          SecurityGroups:
+            - !Ref DaskSecurityGroup
+          Subnets: !Ref Subnets
+
+  DaskWorkerService:
+    Type: 'AWS::ECS::Service'
+    DependsOn:
+      - serviceRegistryWorker
+      - logsGroupWorkers
+    Properties:
+      Cluster: !Ref DaskCluster
+      DeploymentConfiguration:
+        MaximumPercent: 200
+        MinimumHealthyPercent: 100
+      DesiredCount: 1
+      LaunchType: FARGATE
+      ServiceName: Dask-Workers
+      ServiceRegistries:
+        - RegistryArn: !GetAtt serviceRegistryWorker.Arn
+      TaskDefinition: !Ref taskdefinitionWorker
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
+          SecurityGroups:
+            - !Ref DaskSecurityGroup
+          Subnets: !Ref Subnets
+
+  DaskSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: 'Enable Scheduler ports access '
+      GroupName: dask-sg
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: '8786'
+          ToPort: '8789'
+          SourceSecurityGroupName: dask-sg
+        - IpProtocol: tcp
+          FromPort: '9000'
+          ToPort: '9002'
+          SourceSecurityGroupName: dask-sg
+      VpcId: !Ref VpcId
