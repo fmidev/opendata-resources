@@ -1,42 +1,12 @@
-# How To Fetch Weather Data From SmartMet Server's HTTP API <!-- omit in toc -->
+# Example Code Guides
 
-Collection of example URLs for SmartMet Server's Timeseries-, WFS- and
-WMS-plugins. Use `format=debug` for a HTML-table and `format=json` for 
-JSON-data.
+TODO: fmiopendata-client should be moved under python. 
 
-- [Daily Maximum Values](#daily-maximum-values)
-- [Present Weather](#present-weather)
-- [Past Weather Observations](#past-weather-observations)
-- [How Much Rain (aka. Precipitation Aount)](#how-much-rain-aka-precipitation-aount)
-- [Strongest Wind Past 24 hours](#strongest-wind-past-24-hours)
-- [Highest Temperature Past 24 hours](#highest-temperature-past-24-hours)
+## Directories
 
-## Daily Maximum Values
-
-Parameter `tmax18` is an observation that contains the maximum temperature from
-previous 18 utc to next day 18 utc.
-
-```text
-/timeseries?param=utctime,stationname,region,name,tmax18&format=debug&producer=daily&endtime=201904160000&starttime=201904150000&lang=fi&place=Kumpula&tz=utc&precision=double&hour=18
-```
-
-## Present Weather
-
-TODO
-
-## Past Weather Observations
-
-TODO
-
-## How Much Rain (aka. Precipitation Aount)
-
-TODO
-
-## Strongest Wind Past 24 hours
-
-TODO
-
-## Highest Temperature Past 24 hours
-
-TODO
-
+* *[bash](./bash)* Shell scripts.
+* *[coverages](./coverages)* How to read coverage-data.
+* *[fmiopendata-client](./fmiopendata-client)* Python client example for reading wfs-data.
+* *[python](./python)* Other Python language examples.
+* *[qgis](./qgis)* Guides for using [QGis](https://www.qgis.org) with FMI's Open Data.
+* *[request-urls](./request-urls)* Sample URL's to get different kinds of weather data.
