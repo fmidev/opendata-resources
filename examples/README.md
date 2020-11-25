@@ -1,6 +1,9 @@
 # Example Code Guides
 
-TODO: fmiopendata-client should be moved under python. 
+TODO: fmiopendata-client should be moved under python.
+
+For data visualization check out the
+[MetOClient](https://github.com/fmidev/metoclient) JavaScript project.
 
 ## Directories
 

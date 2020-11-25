@@ -2,6 +2,9 @@
 
 Contains additional recourses for FMI Open Data Portal.
 
+For data visualization check out the
+[MetOClient](https://github.com/fmidev/metoclient) JavaScript project.
+
 ## Folder Structure
 
 * *[examples](./examples)* Code samples and tutorials etc.
