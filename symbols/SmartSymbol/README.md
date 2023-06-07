@@ -55,4 +55,4 @@ https://opendata.fmi.fi/timeseries?latlon=60.31722,24.96333&param=smartsymbol,sm
 64 = scattered hail showers  
 67 = hail showers  
 
-`note`: if sun elevation is < 0° add 100 to SmartySymbol value. E.g. 1 -> 101.
+`note`: if sun elevation is < 0° add 100 to SmartSymbol value. E.g. 1 -> 101.
