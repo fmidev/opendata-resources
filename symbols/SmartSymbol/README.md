@@ -1,5 +1,5 @@
 
-# SmarSymbol symbol mapping guide
+# SmartSymbol symbol mapping guide
 
 ## Example
 
